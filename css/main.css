@@ -1,3 +1,27 @@
+:root {
+  /* color */
+
+  /* Text */
+  --color-text-primary: #000;
+  --color-text-secondary: #333;
+  --color-text-error: #ff5757;
+  --color-text-bg-write: #fff;
+  --color-text-bg-opacity: rgba(255, 255, 255, 0.3);
+  /* Battons */
+  --color-btn-primary: #756157;
+  --color-btn-secondary: #82b3d3;
+  --color-btn-selected: #7db54f;
+
+  /* Background */
+
+  --color-bg-basic: #fff;
+  --color-bg-primary: #82b3d3;
+
+  /* Font */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
@@ -6,6 +30,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 header {
@@ -27,4 +57,12 @@ footer {
 a {
   color: #000;
   text-decoration: none;
+}
+
+/*  */
+
+.btn {
+}
+
+.link-bg--brown {
 }
