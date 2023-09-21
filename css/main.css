@@ -5,8 +5,8 @@
   --color-text-primary: #000;
   --color-text-secondary: #333;
   --color-text-error: #ff5757;
-  --color-text-bg-write: #fff;
-  --color-text-bg-opacity: rgba(255, 255, 255, 0.3);
+  --color-text-write: #fff;
+  --color-text-opacity: rgba(255, 255, 255, 0.3);
   /* Battons */
   --color-btn-primary: #756157;
   --color-btn-secondary: #82b3d3;
@@ -14,8 +14,9 @@
 
   /* Background */
 
-  --color-bg-basic: #fff;
-  --color-bg-primary: #82b3d3;
+  --bg-basic: #fff;
+  --bg-primary: #82b3d3;
+  --bg-selected: #7db54f;
 
   /* Font */
   --fw-regular: 400;
@@ -30,12 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.container {
-  max-width: 1090px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 header {
@@ -54,15 +49,32 @@ footer {
   background: black;
 }
 
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 a {
   color: #000;
   text-decoration: none;
 }
+/* для всех элементов внутри которых есть картинка */
+* img {
+  max-width: 100%;
+}
 
-/*  */
+/* General classes */
 
 .btn {
+  text-align: center;
+  color: var(--color-text-write);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
 }
 
 .link-bg--brown {
+  background-color: var(--color-btn-primary);
 }
