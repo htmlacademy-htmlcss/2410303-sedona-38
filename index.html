@@ -21,36 +21,41 @@
         >HTML и CSS. Профессиональная вёрстка сайтов</a
       >».
     </p> -->
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__wrapper">
-          <div class="header__left">
-            <a class="header-logo" href="./images/header-logo.svg">
-              <img src="./images/header-logo.svg" alt="header logo" />
-            </a>
-            <nav class="header__nav">
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Главная</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">О седоне</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Гостиницы</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__right">
-            <form action="" class="header__form">
-              <input type="text" class="header__search" placeholder="search" />
-              <button class="btn header-btn"></button>
-            </form>
-            <a href="" class="heart" data-number="12"></a>
-            <a href="" class="btn header-link link-bg--brown">Хочу сюда!</a>
-          </div>
-        </div>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <nav class="page-header__nav">
+          <a class="header-logo" href="./images/header-logo.svg">
+            <img src="./images/header-logo.svg" alt="header logo" />
+          </a>
+          <ul class="nav-list menu__nav-list">
+            <li class="menu__nav-item">
+              <a href="#" class="menu__nav-link">Главная</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="#" class="menu__nav-link">О седоне</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="#" class="menu__nav-link">Гостиницы</a>
+            </li>
+          </ul>
+
+          <ul class="nav-list menu__nav-user">
+            <li class="menu__nav-user-item">
+              <a href="" class="menu__nav-user-link">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="menu__nav-user-item">
+              <a href="" class="menu__nav-user-link">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="menu__nav-user-item">
+              <a href="" class="menu__nav-user-link">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       </div>
     </header>
     <main class="main">

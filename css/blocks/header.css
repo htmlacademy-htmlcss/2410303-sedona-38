@@ -1,3 +1,10 @@
+/* <form class="page-header__form" action="">
+<input type="text" class="header__search" placeholder="search" />
+<button class="btn header-btn"></button>
+</form>
+<a href="" class="heart" data-number="12"></a>
+<a href="" class="btn header-link link-bg--brown">Хочу сюда!</a>  */
+
 .header {
   height: 64px;
   background-color: var(--color-bg-basic);
