@@ -1,0 +1,31 @@
+.filter__bg {
+  background-image: url("../../images/filter__hotel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.filter__hotel__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__filter {
+  display: flex;
+  gap: 70px;
+}
+
+.inner__header {
+  padding: 35px 0 0 0;
+}
+
+.filter__hotel {
+  padding: 0 0 70px 0;
+}
+
+.filters__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
