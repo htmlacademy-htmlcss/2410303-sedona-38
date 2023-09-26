@@ -1,8 +1,8 @@
 {
   "editor.renderWhitespace": "selection",
   "files.exclude": {
-      "*:Zone.Identifier": true,
-      "node_modules/": true
+    "*:Zone.Identifier": true,
+    "node_modules/": true
   },
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
@@ -18,6 +18,7 @@
   "css.lint.universalSelector": "warning",
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
+  "html.format.wrapAttributes": "auto",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true
 }
