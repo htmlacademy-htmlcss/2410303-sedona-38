@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="./css/catalog.css" /> -->
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="page-header__container container">
         <nav class="page-header__nav">
           <a class="header-logo" href="../index.html">
@@ -46,7 +46,7 @@
         </nav>
       </div>
     </header>
-    <main class="main">
+    <main class="main" data-test="main">
       <div class="filter__bg">
         <header class="inner__header">
           <div class="container">
@@ -59,7 +59,7 @@
           </div>
         </header>
 
-        <section class="filter__hotel">
+        <section class="filter__hotel" data-test="filter">
           <div class="container">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <div class="filter__hotel__wrap">
@@ -141,7 +141,7 @@
             </div>
           </div>
         </section>
-        <section class="catalog__hotel">
+        <section class="catalog__hotel" data-test="catalog">
           <header class="catalog__hotel__header">
             <h2 class="catalog__hotel__header-title">
               Найдено гостиниц:
@@ -255,9 +255,34 @@
             </li>
           </ul>
         </section>
+        <section class="sending__catalog"  data-test="subscribe">
+          <div class="container sending__container">
+            <div class="sending__wrap__catalog">
+              <div class="sending__top__catalog">
+                <h2 class="title sending__top-title__catalog">Подпишитесь на рассылку</h2>
+                <p class="subtext sending-text__catalog">
+                  Только полезная информация и никакого спама, честное
+                  бойскаутское!
+                </p>
+              </div>
+              <div class="sending__bottom__catalog">
+                <form
+                  class="sending__form__catalog"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <p class="sending__form-email__catalog">
+                    <input type="email" name="sending-email" placeholder="Ваш email" />
+                  </p>
+                  <button class="button" type="submit">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="container footer__container">
         <address>
           <div class="footer__wrap">

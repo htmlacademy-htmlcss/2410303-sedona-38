@@ -21,7 +21,7 @@
         >HTML и CSS. Профессиональная вёрстка сайтов</a
       >».
     </p> -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="page-header__container container">
         <nav class="page-header__nav">
           <a class="header-logo" href="index.html">
@@ -58,7 +58,7 @@
         </nav>
       </div>
 
-      <div class="page-header__content">
+      <div class="page-header__content" data-test="hero">
         <div class="container page-header__container">
           <h1 class="visually-hidden">Сайт Седона</h1>
           <div class="page-header__content__banner">
@@ -67,8 +67,8 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="advantages">
+    <main class="main" data-test="main">
+      <section class="advantages" data-test="advantages">
         <div class="container advantages__container">
           <div class="advantages__wrap">
             <div class="advantages__top">
@@ -171,7 +171,7 @@
           </div>
         </div>
       </section>
-      <section class="search__hotel">
+      <section class="search__hotel" data-test="search">
         <div class="container search__hotel__container">
           <div class="search__hotel__wrap">
             <h2 class="title search__hotel-title">Заинтересовались?</h2>
@@ -185,7 +185,7 @@
           </div>
         </div>
       </section>
-      <section class="sending">
+      <section class="sending"  data-test="subscribe">
         <div class="container sending__container">
           <div class="sending__wrap">
             <div class="sending__top">
@@ -211,7 +211,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="container footer__container">
         <address>
           <div class="footer__wrap">

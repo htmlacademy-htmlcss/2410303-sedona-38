@@ -6,6 +6,7 @@
 <a href="" class="btn header-link link-bg--brown">Хочу сюда!</a>  */
 
 .header {
+  caption-side: bottom;
   height: 64px;
   background-color: var(--color-bg-basic);
 }
