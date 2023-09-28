@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Ярослав Новиков](https://up.htmlacademy.ru/htmlcss/38/user/2410303).
-* Наставник: `Неизвестно`.
+- Студент: [Ярослав Новиков](https://up.htmlacademy.ru/htmlcss/38/user/2410303).
+- Наставник: `Иван Жарков`- https://github.com/Stalyer
 
 ---
 
