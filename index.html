@@ -2,16 +2,16 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css">
   </head>
 
   <body>
     <header class="page-header" data-test="header">
       <nav class="page-header__nav">
         <a class="header-logo" href="index.html">
-          <img width="140" height="70" src="./images/header-logo.svg" alt="header logo" />
+          <img width="140" height="70" src="./images/header-logo.svg" alt="header logo">
         </a>
         <ul class="nav-list menu__nav-list">
           <li class="menu__nav-item">
@@ -47,7 +47,7 @@
         <h1 class="visually-hidden">Сайт Седона</h1>
         <div class="hero__banner">
           <img width="458" height="352" class="page-header__content__banner-img" src="./images/welcome.svg"
-            alt="Баннер Welcome" />
+            alt="Баннер Welcome">
         </div>
       </section>
       <section class="advantages" data-test="advantages">
@@ -59,51 +59,62 @@
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
         </header>
-        <div class="advantages__header__bottom__left">
-          <h3 class="advantages__header__bottom-title">Настоящий городок</h3>
-          <p class="advantages__header__bottom-subtitle">
-            Седона — не аттракцион для туристов, там течёт своя жизнь
-          </p>
-        </div>
-        <div class="advantages__header__bottom__right">
-          <div class="advantages__header__bottom__img">
-            <img width="800" height="352" class="advantages-img" src="./images/building.webp" alt="здания с флагами" />
-          </div>
-        </div>
-        <ul class="advantages__bottom__cards">
-          <li class="advantages__bottom__card">
-            <h3 class="advantages__bottom__card-title">Небольшая площадь</h3>
-            <p class="advantages__bottom__card-text">
-              Все достопримечательности находятся очень близко
-            </p>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <ul class="advantages-list-top">
+              <li class="advantages-list-top-item">
+                <div class="advantages__content">
+                  <h3 class="advantages__content-title">Настоящий городок</h3>
+                  <p class="advantages__content-subtitle">
+                    Седона — не аттракцион для туристов, там течёт своя жизнь
+                  </p>
+                </div>
+                <div class="advantages__content__img">
+                  <img width="800" height="352" class="advantages__content-img" src="./images/building.webp"
+                    alt="здания с флагами">
+                </div>
+              </li>
+            </ul>
           </li>
-          <li class="advantages__bottom__card">
-            <h3 class="advantages__bottom__card-title">Красивая дорога</h3>
-            <p class="advantages__bottom__card-text">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+          <li class="advantages-item">
+            <ul class="advantages-list-cards">
+              <li class="advantages__card">
+                <h3 class="advantages__card-title">Небольшая площадь</h3>
+                <p class="advantages__card-text">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </li>
+              <li class="advantages__card">
+                <h3 class="advantages__card-title">Красивая дорога</h3>
+                <p class="advantages__card-text">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </li>
+              <li class="advantages__card">
+                <h3 class="advantages__card-title">Мало туристов</h3>
+                <p class="advantages__card-text">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </li>
+            </ul>
           </li>
-          <li class="advantages__bottom__card">
-            <h3 class="advantages__bottom__card-title">Мало туристов</h3>
-            <p class="advantages__bottom__card-text">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+          <li class="advantages-item">
+            <ul class="advantages-bottom-list">
+              <li class="advantages-bottom-item">
+                <div class="advantages__content__img">
+                  <img width="800" height="385" class="advantages__content-img" src="./images/rocks.webp"
+                    alt="Деревья на скалах">
+                </div>
+                <div class="advantages__content">
+                  <h3 class="advantages__content-title">Там есть мост дьявола</h3>
+                  <p class="advantages__content-subtitle">
+                    Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                  </p>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
-        <div class="advantages__bottom__content">
-          <div class="advantages__bottom__content__left">
-            <img width="800" height="385" class="advantages__content-img" src="./images/rocks.webp"
-              alt="Деревья на скалах" />
-          </div>
-          <div class="advantages__bottom__content__right">
-            <h3 class="attractions__content__right-title">
-              Там есть мост дьявола
-            </h3>
-            <p class="advantages__bottom__content__right-subtitle">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-          </div>
-        </div>
       </section>
       <section class="services">
         <h2 class="title services-title">
@@ -112,23 +123,23 @@
         <p class="subtext services-text">
           Опытный персонал и качественное обслуживание!
         </p>
-        <ul class="services__bottom__cards">
-          <li class="services__bottom__card">
-            <h3 class="services__bottom-title">Жильё</h3>
-            <p class="services__bottom-text">
+        <ul class="services__cards">
+          <li class="services__card">
+            <h3 class="services__card-title">Жильё</h3>
+            <p class="services__card-text">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="services__bottom__card">
-            <h3 class="services__bottom-title">Еда</h3>
-            <p class="services__bottom-text">
+          <li class="services__card">
+            <h3 class="services__card-title">Еда</h3>
+            <p class="services__card-text">
               Всегда заказывайте топовый фирменный бургер, вы не
               разочаруетесь!
             </p>
           </li>
-          <li class="services__bottom__card">
-            <h3 class="services__bottom-title">Сувениры</h3>
-            <p class="services__bottom-text">
+          <li class="services__card">
+            <h3 class="services__card-title">Сувениры</h3>
+            <p class="services__card-text">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
@@ -151,13 +162,9 @@
           бойскаутское!
         </p>
         <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <p class="sending__form-email">
-              <input type="email" name="sending-email" placeholder="Ваш email">
-              <span class="visually-hidden">Ваш email</span>
-            </p>
-            <button class="button" type="submit">Подписаться</button>
-          </label>
+          <label class="visually-hidden" for="sending-email">Ваш email</label>
+          <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -194,7 +201,7 @@
       <a href="tel:+78128121212" class="footer__phone">+7 (812) 812-12-12</a>
       <div class="footer__logo">
         <a class="footer__logo-link" href="https://htmlacademy.ru/" target="_blank">
-          <img class="footer__logo-img" width="115" height="34" src="./images/footer-logo.svg" alt="HTML Academy" />
+          <img class="footer__logo-img" width="115" height="34" src="./images/footer-logo.svg" alt="HTML Academy">
         </a>
       </div>
     </footer>
