@@ -48,11 +48,11 @@
     <main class="main" data-test="main">
       <div class="filter__bg">
         <header class="inner__header">
-          <div class="container">
+          <div class="contfainer">
             <h1 class="inner__header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link"><span>На главную</span></a>
+                <a class="breadcrumbs-link" href="./index.html"><span>На главную</span></a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -69,21 +69,22 @@
                 <ul class="catalog__filter-list">
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="checkbox" name="infrastructure" checked>
+                      <input class="catalog__filter-input" type="checkbox" name="infrastructure" value="pool" checked>
                       Бассейн
                     </label>
                   </li>
 
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="checkbox" name="infrastructure" checked>
+                      <input class="catalog__filter-input" type="checkbox" name="infrastructure" value="parking"
+                        checked>
                       Парковка
                     </label>
                   </li>
 
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="checkbox" name="infrastructure">
+                      <input class="catalog__filter-input" type="checkbox" name="infrastructure" value="wifi">
                       Wi-Fi
                     </label>
                   </li>
@@ -94,21 +95,21 @@
                 <ul class="catalog__filter-list">
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="radio" name="housing" checked>
+                      <input class="catalog__filter-input" type="radio" name="housing" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
 
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="radio" name="housing">
-                      Модель
+                      <input class="catalog__filter-input" type="radio" name="housing" value="motel">
+                      Мотель
                     </label>
                   </li>
 
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
-                      <input class="catalog__filter-input" type="radio" name="housing">
+                      <input class="catalog__filter-input" type="radio" name="housing" value="apartments">
                       Апартаменты
                     </label>
                   </li>
@@ -180,136 +181,125 @@
                   <p class="card-price">От<b>4000</b><span>₽</span></p>
                 </div>
                 <div class="card__buttons">
-                  <button class="details-btn">подробнее</button>
-                  <button class="favorites-btn">в избранное</button>
+                  <a class="details-btn">подробнее</a>
+                  <button class="favorites-btn" type="button">в избранное</button>
                 </div>
                 <p class="card__stars">
-                  <span class="visually-hidden"></span>
-                  <span class="visually-hidden"></span>
-                  <span class="visually-hidden"></span>
-                  <span class="visually-hidden"></span>
+                  <span class="visually-hidden">Четыре звезды</span>
                 </p>
                 <span class="card-rating">
                   Рейтинг:<b class="card__rating-number">8,5</b>
                 </span>
               </div>
-      </div>
-      </li>
+            </li>
+            <li class="card-item">
+              <a class="card__img-link" href="#">
+                <img width="300" height="212" class="card-img" src="/images/hotel-2.webp" alt="Villas at Poco Diablo">
+              </a>
+              <div class="card-content">
+                <a class="card__title-link" href="#">
+                  <h3 class="card-title">Villas at Poco Diablo</h3>
+                </a>
+                <div class="card__info">
+                  <p class="card-name">Гостиница</p>
+                  <p class="card-price">От<b>5000</b><span>₽</span></p>
+                </div>
+                <div class="card__buttons">
+                  <a class="details-btn">подробнее</a>
+                  <button class="favorites-btn" type="button">в избранное</button>
+                </div>
+                <p class="card__stars">
+                  <span class="visually-hidden">Четыре звезды</span>
+                </p>
+                <span class="card-rating">
+                  Рейтинг:<b class="card__rating-number">9,2</b>
+                </span>
+              </div>
+            </li>
 
-      <li class="card-item">
-        <a class="card__img-link" href="#">
-          <img width="300" height="212" class="card-img" src="/images/hotel-2.webp" alt="Villas at Poco Diablo">
-        </a>
-        <div class="card-content">
-          <a class="card__title-link" href="#">
-            <h3 class="card-title">Villas at Poco Diablo</h3>
-          </a>
-          <div class="card__info">
-            <p class="card-name">Гостиница</p>
-            <p class="card-price">От<b>5000</b><span>₽</span></p>
-          </div>
-          <div class="card__buttons">
-            <button class="details-btn">подробнее</button>
-            <button class="favorites-btn">в избранное</button>
-          </div>
-          <p class="card__stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-          </p>
-          <span class="card-rating">
-            Рейтинг:<b class="card__rating-number">9,2</b>
-          </span>
-        </div>
-      </li>
+            <li class="card-item">
+              <a class="card__img-link" href="#">
+                <img width="300" height="212" class="card-img" src="/images/hotel-3.webp" alt="Desert Quail Inn">
+              </a>
+              <div class="card-content">
+                <a class="card__title-link" href="#">
+                  <h3 class="card-title">Desert Quail Inn</h3>
+                </a>
+                <div class="card__info">
+                  <p class="card-name">Гостиница</p>
+                  <p class="card-price">От<b>2500</b><span>₽</span></p>
+                </div>
+                <div class="card__buttons">
+                  <a class="details-btn">подробнее</a>
+                  <button class="favorites-btn" type="button">в избранное</button>
+                </div>
+                <p class="card__stars">
+                  <span class="visually-hidden">Три звезды</span>
+                </p>
+                <span class="card-rating">
+                  Рейтинг:<b class="card__rating-number">6,9</b>
+                </span>
+              </div>
+            </li>
 
-      <li class="card-item">
-        <a class="card__img-link" href="#">
-          <img width="300" height="212" class="card-img" src="/images/hotel-3.webp" alt="Desert Quail Inn">
-        </a>
-        <div class="card-content">
-          <a class="card__title-link" href="#">
-            <h3 class="card-title">Desert Quail Inn</h3>
-          </a>
-          <div class="card__info">
-            <p class="card-name">Гостиница</p>
-            <p class="card-price">От<b>2500</b><span>₽</span></p>
-          </div>
-          <div class="card__buttons">
-            <button class="details-btn">подробнее</button>
-            <button class="favorites-btn">в избранное</button>
-          </div>
-          <p class="card__stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
+            <li class="card-item">
+              <a class="card__img-link" href="#">
+                <img width="300" height="212" class="card-img" src="/images/hotel-4.webp" alt="GreenTree Inn">
+              </a>
+              <div class="card-content">
+                <a class="card__title-link" href="#">
+                  <h3 class="card-title">GreenTree Inn</h3>
+                </a>
+                <div class="card__info">
+                  <p class="card-name">Гостиница</p>
+                  <p class="card-price">От<b>1500</b><span>₽</span></p>
+                </div>
+                <div class="card__buttons">
+                  <a class="details-btn">подробнее</a>
+                  <button class="favorites-btn" type="button">в избранное</button>
+                </div>
+                <p class="card__stars">
+                  <span class="visually-hidden">Две звезды</span>
+                </p>
+                <span class="card-rating">
+                  Рейтинг:<b class="card__rating-number">5,0</b>
+                </span>
+              </div>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <span class="pagination-link">...</span>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </section>
+        <section class="sending" data-test="subscribe">
+          <h2 class="title sending__top-title">Подпишитесь на рассылку</h2>
+          <p class="subtext sending-text">
+            Только полезная информация и никакого спама, честное
+            бойскаутское!
           </p>
-          <span class="card-rating">
-            Рейтинг:<b class="card__rating-number">6,9</b>
-          </span>
-        </div>
-      </li>
-
-      <li class="card-item">
-        <a class="card__img-link" href="#">
-          <img width="300" height="212" class="card-img" src="/images/hotel-4.webp" alt="GreenTree Inn">
-        </a>
-        <div class="card-content">
-          <a class="card__title-link" href="#">
-            <h3 class="card-title">GreenTree Inn</h3>
-          </a>
-          <div class="card__info">
-            <p class="card-name">Гостиница</p>
-            <p class="card-price">От<b>1500</b><span>₽</span></p>
-          </div>
-          <div class="card__buttons">
-            <button class="details-btn">подробнее</button>
-            <button class="favorites-btn">в избранное</button>
-          </div>
-          <p class="card__stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-          </p>
-          <span class="card-rating">
-            Рейтинг:<b class="card__rating-number">5,0</b>
-          </span>
-        </div>
-      </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item">
-          <a class="pagination-link">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <span class="pagination-link">...</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
-      </section>
-      <section class="sending" data-test="subscribe">
-        <h2 class="title sending__top-title">Подпишитесь на рассылку</h2>
-        <p class="subtext sending-text">
-          Только полезная информация и никакого спама, честное
-          бойскаутское!
-        </p>
-        <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="sending-email">Ваш email</label>
-          <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-      </section>
+          <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="sending-email">Ваш email</label>
+            <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
+            <button class="button" type="submit">Подписаться</button>
+          </form>
+        </section>
       </div>
     </main>
     <footer class="footer" data-test="footer">
