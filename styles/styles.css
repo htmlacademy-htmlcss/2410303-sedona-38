@@ -25,3 +25,31 @@ body {
   line-height: 21px;
   background-color: #fff;
 }
+
+
+/* -- Page__Header -- */
+
+.page-header {
+  background-color: #fff;
+}
+.page-header__nav {
+  padding: 20px 0;
+  display: flex;
+}
+.header-logo {}
+.nav-list {
+  display: flex;
+}
+.menu__nav-list {
+  margin-right: auto;
+}
+.menu__nav-item {}
+.menu__nav-link {}
+.nav-link-current {}
+.menu__nav-user {
+
+}
+.menu__nav-user-item {}
+.menu__nav-user-link {}
+.visually-hidden {}
+.favorite-decor {}
