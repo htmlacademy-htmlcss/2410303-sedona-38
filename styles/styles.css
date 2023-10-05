@@ -18,6 +18,45 @@
 
 }
 
+:root {
+   /* Font */
+
+   --fw-regular: 400;
+   --fw-bold: 700;
+
+  /* color */
+
+  /* Text */
+  --color-text-primary: #000;
+  --color-text-secondary: #333;
+  --color-text-error: #ff5757;
+  --color-text-write: #fff;
+  --color-text-opacity: rgba(255, 255, 255, 0.3);
+
+  /* Battons */
+  --color-btn-primary: #756157;
+  --color-btn-secondary: #82b3d3;
+  --color-btn-selected: #7db54f;
+
+  /* Background */
+  --bg-basic: rgba(0, 0, 0, 0.30);
+  --bg-primary: #82b3d3;
+  --bg-secondary: rgba(131, 179, 211);
+
+  /* Icons */
+
+    --ico-basic: #000;
+    --ico-secondary: #83B3D3;
+    --ico-inscriptions:#7DB54F;
+
+ /* Forms */
+
+    --form-input: #3F5E72;
+    --form-dark-element: #E5E5E5;
+    --form-light-element:#F2F2F2;
+
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -25,31 +64,3 @@ body {
   line-height: 21px;
   background-color: #fff;
 }
-
-
-/* -- Page__Header -- */
-
-.page-header {
-  background-color: #fff;
-}
-.page-header__nav {
-  padding: 20px 0;
-  display: flex;
-}
-.header-logo {}
-.nav-list {
-  display: flex;
-}
-.menu__nav-list {
-  margin-right: auto;
-}
-.menu__nav-item {}
-.menu__nav-link {}
-.nav-link-current {}
-.menu__nav-user {
-
-}
-.menu__nav-user-item {}
-.menu__nav-user-link {}
-.visually-hidden {}
-.favorite-decor {}
