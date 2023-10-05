@@ -229,3 +229,39 @@ body {
   background-color: var(--color-btn-selected);
 
 }
+
+/* --Section Hero-- */
+
+.hero {
+  min-height: 485px;
+  background-image: url('../images/hero__bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/hero__bg-decor.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  width: 100%;
+  height: 57px;
+}
+
+.hero__banner {
+  text-align: center;
+
+}
+
+.page-header__content__banner-img {
+  margin: 52px auto 0 auto;
+
+}
