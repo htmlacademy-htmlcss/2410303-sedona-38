@@ -328,14 +328,15 @@ body {
 
 .advantages-item__wrap {
   display: flex;
-  background-color: var(--bg-primary);
+
 }
 
 .advantages__content {
 
   flex-basis: 400px;
   text-align: center;
-  margin: auto 85px auto 85px;
+  padding: 90px 10px;
+  background-color: var(--bg-primary);
 
 }
 
