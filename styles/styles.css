@@ -68,7 +68,13 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1076px;
+  max-width: 1110px;
+  padding: 0 10px;
+}
+
+.main-container {
+  max-width: 1230px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -135,18 +141,20 @@ body {
   height: 64px;
 }
 
-.header-logo {}
+.header-logo {
+  z-index: 1;
+}
 
 .nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 28px;
+
 
 }
 
 .menu__nav-list {
-  margin-right: auto;
+  margin-left: 46px;
   gap: 32px;
   font-weight: var(--fw-bold);
 
@@ -206,8 +214,7 @@ body {
 }
 
 .menu__nav-user {
-  padding: 20px 0;
-
+  margin-left: auto;
 }
 
 .menu__nav-user-item {}
@@ -251,13 +258,13 @@ body {
 }
 
 .page-header-btn {
-  padding: 8px 34px;
-  margin-right: 70px;
+  padding: 8px 34px 8px 34px;
+  margin-right: 30px;
   text-transform: uppercase;
   color: var(--color-text-write);
   background-color: var(--color-btn-primary);
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 16px;
   transition: background-color 0.3s ease-in-out;
 
 }
@@ -310,9 +317,8 @@ body {
 .advantages__header {
   max-width: 655px;
   background-color: var(--bg-white);
-  margin: 0 auto 69px auto;
-  padding: 69px 0 0 0;
-
+  margin: 0 auto 0 auto;
+  padding: 69px 0 89px 0
 }
 
 .advantages__header-title {
@@ -334,7 +340,7 @@ body {
 .advantages__content {
   flex-basis: 400px;
   text-align: center;
-  padding: 90px 10px;
+  padding: 103px 80px;
   background-color: var(--bg-primary);
 
 }
@@ -370,7 +376,7 @@ body {
 }
 
 .advantages-card__block {
-  padding: 103px 10px;
+  padding: 113px 86px;
   max-width: 485px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -391,7 +397,7 @@ body {
   width: 60px;
   height: 2px;
   right: 85px;
-  left: 140px;
+  left: 78px;
   bottom: -30px;
   background: rgba(0, 0, 0, 0.30);
 }
@@ -409,7 +415,7 @@ body {
   max-width: 655px;
   background-color: var(--bg-white);
   margin: 0 auto 69px auto;
-  padding: 69px 0 0 0;
+  padding: 62px 0 0 0;
 }
 
 .services-title {
@@ -425,7 +431,7 @@ body {
 .services__card {
   position: relative;
   flex-basis: 400px;
-  padding: 183px 85px 80px 85px;
+  padding: 178px 85px 80px 85px;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -436,8 +442,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  top: 95px;
-  left: 135px;
+  top: 77px;
+  left: 160px;
   right: 0;
   width: 75px;
   height: 72px;
@@ -449,8 +455,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  top: 95px;
-  left: 135px;
+  top: 75px;
+  left: 160px;
   right: 0;
   width: 75px;
   height: 72px;
@@ -462,8 +468,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  top: 95px;
-  left: 135px;
+  top: 75px;
+  left: 160px;
   right: 0;
   width: 75px;
   height: 75px;
@@ -481,4 +487,38 @@ body {
 
 .services__card-text {
   color: var(--color-text-secondary);
+}
+
+/* Search Hotel */
+
+.search__hotel {
+  max-width: 592px;
+  padding: 98px 0;
+  margin: 0 auto;
+  background-color: var(--bg-white);
+}
+
+.search__hotel-title {
+  margin-bottom: 20px;
+
+}
+
+.search__hotel-subtext {
+  margin-bottom: 54px;
+}
+
+.search__hotel-btn {
+  display: block;
+  max-width: 376px;
+  padding: 15px 50px 15px 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--color-btn-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search__hotel-btn:hover {
+  background-color: var(--color-btn-selected);
 }
