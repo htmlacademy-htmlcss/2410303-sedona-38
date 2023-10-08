@@ -499,7 +499,7 @@ body {
 /* Search Hotel */
 
 .search__hotel {
-  max-width: 592px;
+  max-width: 600px;
   padding: 98px 0;
   margin: 0 auto;
   background-color: var(--bg-white);
@@ -512,7 +512,7 @@ body {
 
 .search__hotel-subtext {
   text-align: center;
-  margin: 0 auto 54px auto;
+  margin-bottom: 54px;
   color: var(--color-text-secondary);
 }
 
@@ -599,7 +599,7 @@ body {
 /* Footer */
 
 .footer {
-  padding: 40px 0;
+  padding: 52px 0;
 }
 
 .footer__wrap {
