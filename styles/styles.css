@@ -594,3 +594,49 @@ body {
 .sending-btn:hover {
   background-color: var(--color-btn-selected);
 }
+
+
+/* Footer */
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 26px;
+}
+
+.footer__social-item {}
+
+.footer__social-link {}
+
+.footer__social-svg {
+  fill: var(--color-btn-secondary);
+}
+
+
+
+.footer__social-svg:hover {
+  fill: var(--color-btn-selected);
+}
+
+.footer__phone {
+  color: var(--color-text-primary);
+  text-align: center;
+  font-size: 40px;
+  font-weight: var(--fw-regular);
+  text-transform: uppercase;
+}
+
+.footer__logo {}
+
+.footer__logo-link {}
+
+.footer__logo-img {}
