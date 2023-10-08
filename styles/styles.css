@@ -78,6 +78,13 @@ body {
   padding: 0 10px;
 }
 
+.small__container {
+  max-width: 720px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+}
+
 /* General styles */
 
 .btn {
@@ -504,7 +511,9 @@ body {
 }
 
 .search__hotel-subtext {
-  margin-bottom: 54px;
+  text-align: center;
+  margin: 0 auto 54px auto;
+  color: var(--color-text-secondary);
 }
 
 .search__hotel-btn {
@@ -520,5 +529,68 @@ body {
 }
 
 .search__hotel-btn:hover {
+  background-color: var(--color-btn-selected);
+}
+
+
+/* Section__Sending */
+
+
+.sending {
+  padding: 96px 0 104px 0;
+  background-image: url('../images/subscribe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.sending__top-title {
+  margin-bottom: 20px;
+  color: var(--color-text-write);
+}
+
+.sending-text {
+  color: var(--color-text-write);
+  margin-bottom: 54px;
+}
+
+.sending__form {
+  max-width: 685px;
+
+}
+
+.sending__form > input {
+  padding: 12px 20px 12px 20px;
+  margin-right: -5px;
+  font-weight: var(--fw-bold);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: var(--bg-white);
+  width: 452px;
+  height: 52px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.sending__form > input::placeholder {
+  padding: 12px 0 12px 0;
+  color: var(--color-text-primary);
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+  opacity: 0.6;
+}
+
+.sending-btn {
+  width: 232px;
+  height: 52px;
+  color: var(--color-text-write);
+  background-color: var(--bg-primary);
+  padding: 8px 50px 8px 50px;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sending-btn:hover {
   background-color: var(--color-btn-selected);
 }
