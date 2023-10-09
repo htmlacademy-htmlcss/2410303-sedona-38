@@ -73,7 +73,7 @@ body {
 }
 
 .main-container {
-  max-width: 1230px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -378,15 +378,12 @@ body {
 
 .advantages-card__wrap {
   display: flex;
-  background-color: rgba(131, 179, 211, 0.12);
 
 }
 
-.advantages-card__block {
+.advantages-card__wrap > .advantages-item {
   padding: 113px 86px;
-  max-width: 485px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  width: 33.333%
 }
 
 .advantages--opacity {
