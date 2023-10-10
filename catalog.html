@@ -50,12 +50,15 @@
     </header>
     <main class="main" data-test="main">
       <div class="filter__bg">
-        <header class="inner__header">
-          <div class="contfainer">
-            <h1 class="inner__header-title">Гостиницы Седоны</h1>
+        <header class="filter__header">
+          <div class="container">
+            <h1 class="filter__header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./index.html"><span>На главную</span></a>
+                <a class="breadcrumbs-link" href="./index.html">
+                  <span class="visually-hidden">На главную</span>
+                  <span class="breadcrumbs-icon"></span>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -94,7 +97,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog__filter-group">
-                <legend>Тип жилья:</legend>
+                <legend class="catalog__filter-title">Тип жилья:</legend>
                 <ul class="catalog__filter-list">
                   <li class="catalog__filter-item">
                     <label class="catalog__filter-control">
@@ -119,7 +122,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog__filter-group">
-                <legend>Стоимость, ₽:</legend>
+                <legend class="catalog__filter-title">Стоимость, ₽:</legend>
                 <div class="filters">
                   <div class="filters__item filters-price">
                     <div class="filters-price__inputs">
@@ -145,6 +148,7 @@
             </form>
           </div>
         </section>
+      </div>
         <section class="catalog__hotel" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <p class="catalog-search">
@@ -303,7 +307,6 @@
             <button class="button" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
     </main>
     <footer class="footer" data-test="footer">
       <ul class="footer__social-list">

@@ -59,7 +59,6 @@
 }
 
 body {
-  position: relative;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -138,11 +137,13 @@ body {
   display: none;
 }
 
+/* *** -Start Main Page- ***  */
+
 /* -- Page__Header -- */
 
 .page-header {
-  position: fixed;
-  width: 100%;
+  /* position: fixed;
+  width: 100%; */
   z-index: 3;
   background-color: var(--bg-white);
 }
@@ -641,3 +642,136 @@ body {
 .footer__logo-link {}
 
 .footer__logo-img {}
+
+
+/* *** -End Main Page- ***  */
+
+/* *** -Start Catalog Page- ***  */
+
+/* Section__Filter */
+
+.filter__bg {
+  background-image: url('../images/filter__hotel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter__header {
+  padding: 40px 0;
+}
+
+.filter__header-title {
+  margin-bottom: 8px;
+  color: var(--color-text-write);
+  font-size: 60px;
+  font-weight: var(--fw-bold);
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs > .breadcrumbs-item:nth-child(2) {
+  padding-left: 28px;
+  position: relative;
+}
+
+.breadcrumbs > .breadcrumbs-item:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 0;
+  top: 6px;
+  bottom: 0;
+  background-image: url('../images/icons/arrow.svg');
+  width: 8px;
+  height: 11px;
+
+
+}
+
+.breadcrumbs-item {}
+
+.breadcrumbs-link {
+  color: var(--color-text-write);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 21px;
+
+}
+
+.breadcrumbs-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/icons/home.svg');
+}
+
+.filter__hotel {
+  padding-bottom: 70px;
+}
+
+.catalog__filter {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__filter-group:first-child {
+  margin-right: 70px;
+}
+
+.catalog__filter-group:last-child {
+  margin-left: auto;
+}
+
+.catalog__filter-title {
+  margin-bottom: 32px;
+  color: var(--color-text-write);
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog__filter-list {}
+
+.catalog__filter-item {}
+
+.catalog__filter-control {}
+
+.catalog__filter-input {}
+
+.filters {
+  display: flex;
+  gap: 70px;
+}
+
+.filters__item {}
+
+.filters-price {}
+
+.filters-price__inputs {}
+
+.filters-price__label {}
+
+.filters-price__input {}
+
+.filters-price__text {}
+
+.filters-price__slider {}
+
+.filters__buttons {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.filters__btn-apply {
+  margin-bottom: 32px;
+}
+
+.filters__btn-reset {}
+
+/* *** -End Catalog Page- ***  */
