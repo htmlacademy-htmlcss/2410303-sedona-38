@@ -149,8 +149,8 @@
           </div>
         </section>
       </div>
-        <section class="catalog__hotel" data-test="catalog">
-          <h2 class="visually-hidden">Список гостиниц</h2>
+      <section class="catalog__hotel" data-test="catalog">
+        <!-- <h2 class="visually-hidden">Список гостиниц</h2>
           <p class="catalog-search">
             Найдено гостиниц:
             <span class="catalog__hotel-search-number">38</span>
@@ -173,7 +173,8 @@
               <a href="#" class="type__card-link">
                 <span class="visually-hidden">Отобразить списком</span></a>
             </li>
-          </ul>
+          </ul> -->
+        <div class="container">
           <ul class="cards">
             <li class="card-item">
               <a class="card__img-link" href="#">
@@ -188,15 +189,21 @@
                   <p class="card-price">От<b>4000</b><span>₽</span></p>
                 </div>
                 <div class="card__buttons">
-                  <a class="details-btn">подробнее</a>
-                  <button class="favorites-btn" type="button">в избранное</button>
+                  <a class="btn details-btn">подробнее</a>
+                  <button class="btn favorites-btn" type="button">в избранное</button>
                 </div>
-                <p class="card__stars">
-                  <span class="visually-hidden">Четыре звезды</span>
-                </p>
-                <span class="card-rating">
-                  Рейтинг:<b class="card__rating-number">8,5</b>
-                </span>
+                <div class="card__stars__wrap">
+                  <p class="card__star">
+                    <span class="visually-hidden">Четыре звезды</span>
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                  </p>
+                  <span class="card__star-rating">
+                    Рейтинг:<b class="card__rating-number">8,5</b>
+                  </span>
+                </div>
               </div>
             </li>
             <li class="card-item">
@@ -212,16 +219,21 @@
                   <p class="card-price">От<b>5000</b><span>₽</span></p>
                 </div>
                 <div class="card__buttons">
-                  <a class="details-btn">подробнее</a>
-                  <button class="favorites-btn" type="button">в избранное</button>
+                  <a class="btn details-btn">подробнее</a>
+                  <button class="btn favorites-btn favorites-btn--active " type="button">в избранное</button>
                 </div>
-                <p class="card__stars">
-                  <span class="visually-hidden">Четыре звезды</span>
-                </p>
-                <span class="card-rating">
-                  Рейтинг:<b class="card__rating-number">9,2</b>
-                </span>
-              </div>
+                <div class="card__stars__wrap">
+                  <p class="card__star">
+                    <span class="visually-hidden">Четыре звезды</span>
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                  </p>
+                  <span class="card__star-rating">
+                    Рейтинг:<b class="card__rating-number">9,2</b>
+                  </span>
+                </div>
             </li>
 
             <li class="card-item">
@@ -237,16 +249,20 @@
                   <p class="card-price">От<b>2500</b><span>₽</span></p>
                 </div>
                 <div class="card__buttons">
-                  <a class="details-btn">подробнее</a>
-                  <button class="favorites-btn" type="button">в избранное</button>
+                  <a class="btn details-btn">подробнее</a>
+                  <button class="btn favorites-btn" type="button">в избранное</button>
                 </div>
-                <p class="card__stars">
-                  <span class="visually-hidden">Три звезды</span>
-                </p>
-                <span class="card-rating">
-                  Рейтинг:<b class="card__rating-number">6,9</b>
-                </span>
-              </div>
+                <div class="card__stars__wrap">
+                  <p class="card__star">
+                    <span class="visually-hidden">Четыре звезды</span>
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                  </p>
+                  <span class="card__star-rating">
+                    Рейтинг:<b class="card__rating-number">6,9</b>
+                  </span>
+                </div>
             </li>
 
             <li class="card-item">
@@ -262,51 +278,55 @@
                   <p class="card-price">От<b>1500</b><span>₽</span></p>
                 </div>
                 <div class="card__buttons">
-                  <a class="details-btn">подробнее</a>
-                  <button class="favorites-btn" type="button">в избранное</button>
+                  <a class="btn details-btn">подробнее</a>
+                  <button class="btn favorites-btn" type="button">в избранное</button>
                 </div>
-                <p class="card__stars">
-                  <span class="visually-hidden">Две звезды</span>
-                </p>
-                <span class="card-rating">
-                  Рейтинг:<b class="card__rating-number">5,0</b>
-                </span>
-              </div>
+                <div class="card__stars__wrap">
+                  <p class="card__star">
+                    <span class="visually-hidden">Четыре звезды</span>
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                    <img src="./images/icons/star.svg" alt="Звезда">
+                  </p>
+                  <span class="card__star-rating">
+                    Рейтинг:<b class="card__rating-number">5,0</b>
+                  </span>
+                </div>
             </li>
-          </ul>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <span class="pagination-link">...</span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-        </section>
-        <section class="sending" data-test="subscribe">
-          <h2 class="title sending__top-title">Подпишитесь на рассылку</h2>
-          <p class="subtext sending-text">
-            Только полезная информация и никакого спама, честное
-            бойскаутское!
-          </p>
-          <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="sending-email">Ваш email</label>
-            <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
-            <button class="button" type="submit">Подписаться</button>
-          </form>
-        </section>
+        </div>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <span class="pagination-link">...</span>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </section>
+      <section class="sending" data-test="subscribe">
+        <h2 class="title sending__top-title">Подпишитесь на рассылку</h2>
+        <p class="subtext sending-text">
+          Только полезная информация и никакого спама, честное
+          бойскаутское!
+        </p>
+        <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="sending-email">Ваш email</label>
+          <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <footer class="footer" data-test="footer">
       <ul class="footer__social-list">
