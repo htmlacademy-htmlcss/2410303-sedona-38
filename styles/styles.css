@@ -845,10 +845,48 @@ body {
 .cards {
   padding: 40px 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   border-bottom: 1px solid #E6E6E6;
+}
+
+/* Вертикальная раскладка карточек списком */
+
+.cards.list {
+  flex-direction: column;
+
+}
+
+.cards.list .card-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.cards.list .card-img {
+  width: 340px;
+  height: 211px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.cards.list .card-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cards.list .card-content {
+  max-width: 345px;
+}
+
+.cards.list .card-price {
+  margin: 0;
+}
+
+.cards.list .card__buttons {
+  gap: 20px;
 }
 
 .card-item {
@@ -858,11 +896,12 @@ body {
   border: 1px solid #E6E6E6;
 }
 
-.card__img-link {}
-
-.card-img {
-  margin-bottom: 16px;
+.card__img-link {
+  display: inline-block;
+  margin-right: 30px;
 }
+
+.card-img {}
 
 .card-content {}
 
