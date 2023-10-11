@@ -848,6 +848,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .card-item {
@@ -951,6 +952,46 @@ body {
   font-size: 16px;
   font-weight: var(--fw-regular);
   line-height: 20px;
+
 }
+
+/* == End Cards == */
+
+/* == Pagination Start == */
+
+.pagination-list {
+  padding: 40px 0 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.pagination-item {}
+
+.pagination-span {
+  display: block;
+  padding: 12px 24px;
+  background-color: transparent;
+}
+
+.pagination-link {
+  text-align: center;
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: var(--color-text-write);
+  background-color: var(--bg-secondary);
+}
+
+.pagination-link--active {
+  background-color: #F2F2F2;
+  color: var(--color-text-primary);
+
+}
+
+/* == Pagination End == */
 
 /* *** -End Catalog Page- ***  */
