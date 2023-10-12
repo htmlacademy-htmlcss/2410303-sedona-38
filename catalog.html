@@ -54,9 +54,8 @@
             <h1 class="filter__header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./index.html">
+                <a class="breadcrumbs-link breadcrumbs-icon" href="./index.html">
                   <span class="visually-hidden">На главную</span>
-                  <span class="breadcrumbs-icon"></span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -220,7 +219,7 @@
                 </div>
                 <div class="card__buttons">
                   <a class="btn details-btn">подробнее</a>
-                  <button class="btn favorites-btn favorites-btn--active " type="button">в избранное</button>
+                  <button class="btn favorites-btn favorites-btn--active" type="button">в избранное</button>
                 </div>
                 <div class="card__stars__wrap">
                   <p class="card__star">
@@ -250,7 +249,7 @@
                 </div>
                 <div class="card__buttons">
                   <a class="btn details-btn">подробнее</a>
-                  <button class="btn favorites-btn" type="button">в избранное</button>
+                  <button class="btn favorites-btn" type="button" disabled>в избранное</button>
                 </div>
                 <div class="card__stars__wrap">
                   <p class="card__star">
@@ -323,7 +322,7 @@
         </p>
         <form class="sending__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="sending-email">Ваш email</label>
-          <input type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
+          <input class="sending-input" type="email" id="sending-email" name="sending-email" placeholder="Ваш email">
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
