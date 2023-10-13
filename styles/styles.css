@@ -70,8 +70,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background-color: var(--bg-white);
+  background-color: #F2F2F2;
   margin: 0;
+
 }
 
 img {
@@ -85,25 +86,18 @@ img {
 svg {
   max-width: 100%;
   height: auto;
-}
 
-.container {
-  margin: 0 auto;
-  max-width: 1110px;
-  padding: 0 10px;
 }
 
 .main-container {
-  max-width: 1220px;
+  max-width: 1230px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
+
 }
 
-.small__container {
-  max-width: 720px;
-  padding: 0 10px;
-  margin: 0 auto;
-
+.page-shadow {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 /* General styles */
@@ -281,6 +275,7 @@ svg {
 }
 
 .header-logo {
+  margin-left: 70px;
   z-index: 1;
 }
 
@@ -355,6 +350,7 @@ svg {
 
 .menu__nav-user {
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .menu__nav-user-item {
@@ -459,16 +455,22 @@ svg {
 
 /* --Section Advantages-- */
 
-.advantages {}
+.advantages {
+  width: 100%;
+  background-color: var(--bg-white);
+}
 
 .advantages__header {
-  max-width: 655px;
-  background-color: var(--bg-white);
-  margin: 0 auto 0 auto;
-  padding: 69px 0 89px 0
+  max-width: 652px;
+  margin: 0 auto;
+  padding: 69px 0 89px 0;
+
+
+
 }
 
 .advantages__header-title {
+
   margin-bottom: 25px;
 
 }
@@ -563,11 +565,12 @@ svg {
 }
 
 /* --Section services-- */
-.services {}
+.services {
+  background-color: var(--bg-white);
+}
 
 .services__header {
   max-width: 655px;
-  background-color: var(--bg-white);
   margin: 0 auto 69px auto;
   padding: 62px 0 0 0;
 }
@@ -647,10 +650,13 @@ svg {
 /* Search Hotel */
 
 .search__hotel {
+  background-color: var(--bg-white);
+}
+
+.search__hotel__block {
   max-width: 600px;
   padding: 98px 0;
   margin: 0 auto;
-  background-color: var(--bg-white);
 }
 
 .search__hotel-title {
@@ -685,10 +691,14 @@ svg {
 
 .sending {
   padding: 96px 0 104px 0;
+
+
+}
+
+.sending--bg {
   background-image: url('../images/subscribe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .sending__top-title {
@@ -703,8 +713,7 @@ svg {
 
 .sending__form {
   max-width: 688px;
-  display: block;
-
+  margin: 0 auto;
 }
 
 .sending-input {
@@ -766,6 +775,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 70px;
 }
 
 .footer__social-list {
