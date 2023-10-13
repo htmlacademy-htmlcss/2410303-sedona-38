@@ -911,6 +911,10 @@ svg {
   padding: 0;
 }
 
+.catalog__filter-group:nth-child(2) {
+  margin-left: 70px;
+}
+
 .catalog__filter-group:nth-child(3) {
   margin-left: auto;
 }
