@@ -1167,12 +1167,25 @@ svg {
 }
 
 .card__stars__wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.card__star {}
+.card__star--icon::after {
+  content: '';
+  position: absolute;
+  left: 33px;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  background-image: url('../images/icons/star.svg');
+  background-repeat: space repeat;
+  width: 66px;
+  height: 17px;
+
+}
 
 .card__star-rating {
   display: flex;
