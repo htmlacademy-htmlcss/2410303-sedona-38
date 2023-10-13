@@ -702,24 +702,24 @@ svg {
 }
 
 .sending__form {
-  max-width: 685px;
+  max-width: 688px;
+  display: block;
 
 }
 
 .sending-input {
-  padding: 0 23px 0 23px;
-  margin-right: -5px;
+  padding: 12px 20px;
+  margin: 0 -5px 0 0;
   font-weight: var(--fw-bold);
   font-size: 18px;
   color: var(--color-text-primary);
   background-color: var(--bg-white);
-  width: 452px;
+  width: 455px;
   height: 52px;
-
   border-radius: 4px 0 0 4px;
   border: none;
   outline: none;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .sending-input:hover {
@@ -733,6 +733,7 @@ svg {
 }
 
 .sending-input::placeholder {
+
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: var(--fw-bold);
@@ -906,13 +907,11 @@ svg {
 
 .catalog__filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog__filter-group:first-child {
-  margin-right: 70px;
-}
-
-.catalog__filter-group:last-child {
+.catalog__filter-group:nth-child(3) {
   margin-left: auto;
 }
 
@@ -1100,6 +1099,7 @@ svg {
 .filters__buttons {
   display: flex;
   flex-direction: column;
+  margin-left: 70px;
 
 }
 
