@@ -1366,14 +1366,14 @@ svg {
 }
 
 
-.four--star::after {
+.card__star--four::after {
   content: '';
   position: absolute;
   width: 89px;
 
 }
 
-.three--star::after {
+.card__star--three::after {
   content: '';
   position: absolute;
   left: 36px;
@@ -1382,7 +1382,7 @@ svg {
 
 }
 
-.two--star::after {
+.card__star--two::after {
   content: '';
   position: absolute;
   left: 25px;
