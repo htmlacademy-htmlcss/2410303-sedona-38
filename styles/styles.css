@@ -1121,29 +1121,86 @@ svg {
 /* Section__Catalog__Hotel */
 
 .catalog__hotel {
-  padding: 0 70px;
+  padding: 50px 70px 60px 70px;
   background-color: var(--bg-white);
 }
 
 /* select__catalog__hotel */
 
 .catalog-search {
-  margin: 0;
+  margin: 0 auto 0 0;
+  color: var(--color-text-primary);
+  font-size: 30px;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
 }
 
 .catalog__hotel-search-number {}
 
-.select-control {}
+.select__control__wrap {
+  display: flex;
+}
+
+.select-control__inner {
+  position: relative;
+}
+
+.select-arrow {
+  position: absolute;
+  content: "";
+  font-size: 12px;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(0);
+  transition: all 0.3s ease-in;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url('../images/icons/select-arrow.svg');
+  width: 12px;
+  height: 9px;
+}
+
+
+
+.select-control {
+  padding: 14px 34px 14px 20px;
+  width: 292px;
+  height: 49px;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  appearance: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  line-height: 21px;
+  transition: all 0.3s ease-in;
+}
+
+.select-control:focus + .select-arrow {
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+.select-control:focus {
+  outline: none;
+  border: 2px solid var(--color-btn-secondary);
+}
 
 .type__card-list {
-  margin: 0;
+  display: flex;
+  margin: 0 0 0 70px;
   padding: 0;
   list-style: none;
+
 }
 
 .type__card-item {}
 
 .type__card-link {}
+
+
+
+
 
 /* == Cards == */
 
