@@ -690,9 +690,7 @@ svg {
 
 
 .sending {
-  padding: 96px 0 104px 0;
-
-
+  padding: 96px 70px 104px 70px;
 }
 
 .sending--bg {
@@ -722,7 +720,7 @@ svg {
   font-weight: var(--fw-bold);
   font-size: 18px;
   color: var(--color-text-primary);
-  background-color: var(--bg-white);
+  background-color: #f2f2f2;
   width: 455px;
   height: 52px;
   border-radius: 4px 0 0 4px;
@@ -846,6 +844,7 @@ svg {
 /* Section__Filter */
 
 .filter__bg {
+  padding: 0 70px;
   background-image: url('../images/filter__hotel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1121,17 +1120,26 @@ svg {
 
 /* Section__Catalog__Hotel */
 
-.catalog__hotel {}
+.catalog__hotel {
+  padding: 0 70px;
+  background-color: var(--bg-white);
+}
 
 /* select__catalog__hotel */
 
-.catalog-search {}
+.catalog-search {
+  margin: 0;
+}
 
 .catalog__hotel-search-number {}
 
 .select-control {}
 
-.type__card-list {}
+.type__card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .type__card-item {}
 
@@ -1141,6 +1149,7 @@ svg {
 
 .cards {
   padding: 40px 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -1331,5 +1340,21 @@ svg {
 }
 
 /* == Pagination End == */
+
+
+/* Sending__Catalog */
+
+.sending__catalog {
+  background-color: var(--bg-white);
+
+}
+
+.sending__catalog-title {
+  color: var(--color-text-primary);
+}
+
+.sending__catalog-subtext {
+  color: var(--color-text-secondary):
+}
 
 /* *** -End Catalog Page- ***  */
