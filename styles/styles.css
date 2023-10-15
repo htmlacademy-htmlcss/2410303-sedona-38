@@ -1,3 +1,5 @@
+/* Font */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -596,43 +598,29 @@ svg {
   list-style: none;
 }
 
-.services__card:nth-child(1)::after {
+
+.services__card:nth-child(1)::before {
   position: absolute;
-  background-image: url('../images/icons/advantage-icon-1.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  top: 77px;
-  left: 160px;
-  right: 0;
-  width: 75px;
-  height: 72px;
+  transform: translate(-50%, -50%);
+  left: 43%;
+  right: 50%;
+  bottom: 56%;
 }
 
-.services__card:nth-child(2)::after {
+.services__card:nth-child(2)::before {
   position: absolute;
-  background-image: url('../images/icons/advantage-icon-2.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  top: 75px;
-  left: 160px;
-  right: 0;
-  width: 75px;
-  height: 72px;
+  transform: translate(-50%, -50%);
+  left: 43%;
+  right: 50%;
+  bottom: 56%;
 }
 
-.services__card:nth-child(3)::after {
+.services__card:nth-child(3)::before {
   position: absolute;
-  background-image: url('../images/icons/advantage-icon-3.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  top: 75px;
-  left: 160px;
-  right: 0;
-  width: 75px;
-  height: 75px;
+  transform: translate(-50%, -50%);
+  left: 43%;
+  right: 50%;
+  bottom: 56%;
 }
 
 .services__card--opacity {
@@ -787,11 +775,10 @@ svg {
   gap: 26px;
   padding: 0;
   margin: 0;
-}
-
-.footer__social-item {
   list-style: none;
 }
+
+.footer__social-item {}
 
 .footer__social-link {}
 
@@ -824,24 +811,20 @@ svg {
 }
 
 .footer__logo-link {
-  display: inline-block;
-}
-
-.footer__logo-svg {
-  fill: var(--color-text-primary);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-size: 34px;
   transition: all 0.3s ease-in-out;
 }
 
-.footer__logo-svg:hover,
-.footer__logo-svg:focus {
-  fill: var(--color-text-brown);
+.footer__logo-link:hover,
+.footer__logo-link:focus {
+  color: var(--color-text-brown);
 }
 
-.footer__logo-svg:active {
-  fill-opacity: 0.3;
+.footer__logo-link:active {
+  opacity: 0.3;
 }
-
-
 
 /* *** -End Main Page- ***  */
 
@@ -1388,11 +1371,6 @@ svg {
   left: 25px;
   width: 48px;
 }
-
-
-
-
-
 
 .card__star-rating {
   display: flex;
