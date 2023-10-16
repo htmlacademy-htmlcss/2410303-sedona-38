@@ -155,13 +155,16 @@ svg {
 
 .details-btn:active,
 .search__hotel-btn:active,
-.sending-btn:active,
-.favorites-btn:active,
-.filters__btn-apply:active,
 .filters__btn-reset:active {
   color: rgba(255, 255, 255, 0.30);
   background-color: #756157;
+}
 
+.sending-btn:active,
+.filters__btn-apply:active,
+.favorites-btn:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: var(--bg-primary);
 }
 
 .favorites-btn {
@@ -189,7 +192,8 @@ svg {
   background-color: var(--color-btn-selected);
 }
 
-.favorites-btn--active:hover {
+.favorites-btn--active:hover,
+.favorites-btn--active:active {
   background-color: #6c9e42;
 }
 
@@ -934,42 +938,36 @@ svg {
   margin-bottom: 16px;
 }
 
-.catalog__filter-text {
-  cursor: pointer;
-  color: var(--color-text-write);
-  font-size: 18px;
-  font-weight: var(--fw-regular);
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-.catalog__filter-control:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.catalog__filter-input:disabled + .catalog__filter-checkbox::before {
-  cursor: no-drop;
-  opacity: 0.3;
-}
-
-.catalog__filter-input:disabled + .catalog__filter-radio::before {
-  cursor: no-drop;
-  opacity: 0.3;
-}
-
 .catalog__filter-input[type="checkbox"],
 .catalog__filter-input[type="radio"] {
   display: none;
 }
 
-/* CHECKBOX */
+/* Поведенме псевдоклассов radio и checkbox */
+
+.catalog__filter-control:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.catalog__filter-input:disabled + .catalog__filter-radio {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+.catalog__filter-input:disabled + .catalog__filter-checkbox {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+/* CТИЛИЗАЦИЯ CHECKBOX */
 
 .catalog__filter-checkbox {
   position: relative;
   padding-left: 36px;
   display: inline-block;
 }
+
+/* -- CТИЛИЗАЦИЯ ФОНА CHECKBOX СНАРУЖИ -- */
 
 .catalog__filter-checkbox::before {
   position: absolute;
@@ -985,6 +983,8 @@ svg {
   left: 0;
 }
 
+/* -- ВНУТРЕННЯЯ CТИЛИЗАЦИЯ CHECKBOX -- */
+
 .catalog__filter-checkbox::after {
   content: '';
   position: absolute;
@@ -998,6 +998,8 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
+/* -- КЛИК НА CHECKBOX -- */
+
 .catalog__filter-input:checked + .catalog__filter-checkbox::after {
   opacity: 1;
   background-image: url('../images/icons/checkbox.svg');
@@ -1008,10 +1010,16 @@ svg {
 }
 
 /* RADIO */
-.catalog__filter-radio {
+.catalog__filter-radio,
+.catalog__filter-checkbox {
   position: relative;
   padding-left: 36px;
   display: inline-block;
+  cursor: pointer;
+  color: var(--color-text-write);
+  font-size: 18px;
+  font-weight: var(--fw-regular);
+  transition: all 0.3s ease-in-out;
 }
 
 .catalog__filter-radio::before {
@@ -1027,6 +1035,8 @@ svg {
   top: 0;
   left: 0;
 }
+
+/* -- ВНУТРЕННЯЯ CТИЛИЗАЦИЯ RADIO -- */
 
 .catalog__filter-radio::after {
   content: '';
@@ -1064,6 +1074,8 @@ svg {
 .catalog__filter-radio:active::before {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+/* -- КОНЕЦ СТИЛИЗАЦИИ КАСТОМНЫХ RADIO, CHECKBOX -- */
 
 .filters {
   display: flex;
