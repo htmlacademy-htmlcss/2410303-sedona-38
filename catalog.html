@@ -135,23 +135,31 @@
                 </fieldset>
                 <fieldset class="catalog__filter-group">
                   <legend class="catalog__filter-title">Стоимость, ₽:</legend>
-                  <div class="filters">
-                    <div class="filters__item filters-price">
-                      <div class="filters-price__inputs">
-                        <label class="filters-price__label">
-                          <input class="filters-price__input" type="number" min="0" max="9000" placeholder="0"
-                            id="input-0">
-                          <span class="filters-price__text">от</span>
-                        </label>
-                        <label class="filters-price__label">
-                          <input class="filters-price__input" type="number" min="0" max="9000" placeholder="9000"
-                            id="input-1">
-                          <span class="filters-price__text">до</span>
-                        </label>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="0" name="min-price" min="0" max="9999"
+                          style="width: 45px">
+                        <span class="range-input-text">от</span>
+                      </label>
+                      <label class="catalog-filter-label">
+                        <input class="range-input" type="number" value="9000" name="max-price" min="0" max="9999"
+                          style="width: 45px">
+                        <span class="range-input-text">до</span>
+                      </label>
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 190px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
                       </div>
-                      <input class="filters-price__slider" type="range" id="range-slider"></input>
                     </div>
                   </div>
+
                 </fieldset>
                 <div class="filters__buttons">
                   <button type="submit" class="btn filters__btn-apply">Применить</button>
