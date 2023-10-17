@@ -745,6 +745,7 @@ svg {
 }
 
 .search__hotel__modal-form {
+  position: relative;
   padding: 64px 70px;
   border-radius: 30px;
   background: #FFF;
@@ -752,6 +753,39 @@ svg {
   width: 720px;
   height: 576px;
   z-index: 9999;
+}
+
+.search__hotel__modal-form-close {
+  position: absolute;
+  display: inline;
+  content: '';
+  top: 116px;
+  left: 613px;
+  right: 52px;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  outline: transparent;
+  border-radius: 50%;
+  border: none;
+  background-color: #f2f2f2;
+  background-image: url('../images/icons/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.search__hotel__modal-form-close:hover {
+  background-color: #E6E6E6;
+}
+
+.search__hotel__modal-form-close:focus {
+  outline: 4px solid #83B3D3;
+}
+
+.search__hotel__modal-form-close:active {
+  opacity: 0.5;
 }
 
 .search__hotel__modal-title {
