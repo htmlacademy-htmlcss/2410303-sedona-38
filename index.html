@@ -163,7 +163,7 @@
           <div class="search__hotel__modal__wrapper">
             <div class="search__hotel__modal__block">
               <form class="search__hotel__modal-form" action="https://echo.htmlacademy.ru/" method="post">
-                <h2 class="search__hotel__modal-title">Поиск гостиницы в Седоне</h2>
+                <h2 class="title search__hotel__modal-title">Поиск гостиницы в Седоне</h2>
                 <p class="field-group search__hotel__modal-form-date">
                   <label class="form-label" for="search__hotel__modal-date">
                     Дата заезда:</label>
@@ -176,21 +176,24 @@
                   <input class="field" type="text" id="search__hotel__modal-date" name="search__hotel__modal-date"
                     value="1 сентября 2023" placeholder="27 апреля 2020">
                 </p>
-
-
                 <div class="search__hotel__modal-form-number-wrap">
                   <p class="field-group search__hotel__modal-form-number-adults">
                     <label class="form-label" for="search__hotel__modal-number-adults">
                       Взрослые:</label>
                     <input class="field" type="number" id="search__hotel__modal-number-adults"
-                      name="search__hotel__modal-number-adults" value="2" placeholder="2">
+                      name="search__hotel__modal-number-adults" value="2" min="0" placeholder="2">
                   </p>
                   <p class="field-group search__hotel__modal-form-number-kids">
                     <label class="form-label" for="search__hotel__modal-number-kids">
                       Дети:</label>
                     <input class="field" type="number" id="search__hotel__modal-number-kids"
-                      name="search__hotel__modal-number-kids" value="2" placeholder="2">
+                      name="search__hotel__modal-number-kids" value="2" min="0" placeholder="2">
                   </p>
+                  <div class="explanatory-text-block">
+                    <p class="explanatory-text"> Укажите количество детей, которые будут с вами, возраст которых от 6
+                      до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
                 </div>
                 <a class="btn search__hotel__modal-search">Найти</a>
               </form>
