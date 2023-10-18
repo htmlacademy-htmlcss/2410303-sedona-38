@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
+
   <body>
     <div class="main-container">
       <div class="page-shadow">
         <header class="page-header" data-test="header">
           <nav class="page-header__nav">
-            <a href="./index.html" class="header-logo" href="index.html">
+            <a href="index.html" class="header-logo">
               <img width="140" height="70" src="./images/header-logo.svg" alt="header logo">
             </a>
             <ul class="nav-list menu__nav-list">
               <li class="menu__nav-item">
-                <a href="./index.html" class="menu__nav-link">Главная</a>
+                <a href="index.html" class="menu__nav-link">Главная</a>
               </li>
               <li class="menu__nav-item">
                 <a href="#" class="menu__nav-link">О седоне</a>
@@ -32,12 +33,12 @@
 
             <ul class="nav-list menu__nav-user">
               <li class="menu__nav-user-item">
-                <a href="#" class="menu__nav-user-link menu__nav-user-search">
+                <a href="#" class="menu__nav-user-link sedona menu__nav-user-search">
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="menu__nav-user-item">
-                <a href="#" class="menu__nav-user-link heart">
+                <a href="#" class="menu__nav-user-link sedona sedona icon-heart">
                   <span class="favorite-decor" data-quantity="12"></span>
                   <span class="visually-hidden">Избранное</span>
 
@@ -48,7 +49,6 @@
               </li>
             </ul>
           </nav>
-
         </header>
         <main class="main" data-test="main">
           <div class="filter__bg">
@@ -56,7 +56,7 @@
               <h1 class="filter__header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-icon" href="./index.html">
+                  <a class="breadcrumbs-link sedona icon-home" href="./index.html">
                     <span class="visually-hidden">На главную</span>
                   </a>
                 </li>
@@ -181,21 +181,21 @@
                   <option class="select-option" value="expensive">Сначала дорогие</option>
                   <option class="select-option" value="popular">Самые популярные</option>
                 </select>
-                <span class="select-arrow"></span>
+                <span class="sedona icon--select-arrow"></span>
               </label>
               <ul class="type__card-list">
                 <li class="type__card-item">
-                  <a href="#" class="type__card-link type__view__card--icon active">
+                  <a href="#" class="type__card-link sedona icon--view__card__btn active">
                     <span class="visually-hidden">Отобразить карточками</span>
                   </a>
                 </li>
                 <li class="type__card-item">
-                  <a href="#" class="type__card-link type__view__gallery--icon">
+                  <a href="#" class="type__card-link sedona icon--view__gallery__btn">
                     <span class="visually-hidden">Отобразить галереей</span>
                   </a>
                 </li>
                 <li class="type__card-item">
-                  <a href="#" class="type__card-link type__view__list--icon">
+                  <a href="#" class="type__card-link sedona icon--view__list__btn">
                     <span class="visually-hidden">Отобразить списком</span></a>
                 </li>
               </ul>
