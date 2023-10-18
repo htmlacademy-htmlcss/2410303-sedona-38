@@ -760,7 +760,7 @@ svg {
   z-index: 9999;
 }
 
-.search__hotel__modal-form-close {
+.icon-close {
   position: absolute;
   display: inline;
   content: '';
@@ -770,27 +770,27 @@ svg {
   transform: translate(-50%, -50%);
   width: 52px;
   height: 52px;
+  color: #000;
   cursor: pointer;
   outline: transparent;
   border-radius: 50%;
   border: none;
   background-color: #f2f2f2;
-  background-image: url('../images/icons/close.svg');
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.3s ease-in-out;
 }
 
-.search__hotel__modal-form-close:hover {
+.icon-close:hover {
   background-color: #E6E6E6;
 }
 
-.search__hotel__modal-form-close:focus {
+.icon-close:focus {
   outline: 4px solid #83B3D3;
 }
 
-.search__hotel__modal-form-close:active {
-  opacity: 0.5;
+.icon-close:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search__hotel__modal-title {
@@ -818,20 +818,35 @@ svg {
 }
 
 .field {
-
   height: 48px;
   border-radius: 4px;
+  border: 3px solid transparent;
   background: #F2F2F2;
-  border: transparent;
-  outline: transparent;
+  outline: 3px solid transparent;
   color: var(--color-text-primary);
   font-size: 18px;
   font-weight: var(--fw-bold);
+  transition: all 0.2s ease-in;
+}
+
+.field:hover {
+  background: #E6E6E6;
+  outline: 0;
+  outline-offset: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field:focus {
+  border: 3px solid #83B3D3;
+  background: #E6E6E6;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .field[type="text"] {
   width: 440px;
   padding: 12px 20px;
+
 }
 
 .field[type="number"] {
@@ -846,7 +861,7 @@ svg {
 }
 
 .field::placeholder {
-  color: var(--color-text-primary);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: var(--fw-bold);
 }
@@ -863,7 +878,7 @@ svg {
   position: relative;
 }
 
-.search__hotel__modal-form-number-kids::after {
+.search__hotel__modal-form-number-kids::before {
   content: '';
   position: absolute;
   left: 75px;
@@ -872,8 +887,30 @@ svg {
   transform: translate(-50%, -50%);
   width: 26px;
   height: 26px;
+  background-repeat: no-repeat;
+  background-color: var(--bg-primary);
   border-radius: 50%;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.search__hotel__modal-form-number-kids::after {
+  content: '';
+  position: absolute;
+  left: 75px;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 12px;
   background-image: url('../images/icons/exclamation.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.search__hotel__modal-form-number-kids:hover::before {
+  background-color: #6298bce8;
 }
 
 .explanatory-text-block::before {
@@ -882,8 +919,6 @@ svg {
   top: -13px;
   left: 49%;
   right: 49%;
-  width: 0;
-  height: 0;
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
   border-bottom: 13px solid #333;
@@ -1448,14 +1483,14 @@ svg {
 .icon--select-arrow {
   position: absolute;
   content: "";
-  font-size: 12px;
+  font-size: 21px;
+  color: #000;
   right: 20px;
   top: 50%;
   transform: translate(0, -50%) rotate(0);
   transition: all 0.3s ease-in;
   z-index: 1;
   pointer-events: none;
-  background-image: url('../images/icons/select-arrow.svg');
   width: 21px;
   height: 20px;
 }
@@ -1489,6 +1524,10 @@ svg {
 
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.30);
+}
+
+.select-control:disabled + .icon--select-arrow {
   color: rgba(0, 0, 0, 0.30);
 }
 
