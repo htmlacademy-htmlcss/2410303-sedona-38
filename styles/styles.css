@@ -40,6 +40,7 @@
   --color-btn-primary: #756157;
   --color-btn-secondary: #82b3d3;
   --color-btn-selected: #7db54f;
+  --color-btn-number: rgba(117, 97, 87, 0.30);
 
   /* Background */
   --bg-basic: rgba(0, 0, 0, 0.30);
@@ -793,6 +794,8 @@ svg {
 .field-group {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 
 
 }
@@ -808,6 +811,7 @@ svg {
   font-size: 20px;
   font-weight: var(--fw-bold);
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 
@@ -822,29 +826,48 @@ svg {
   position: absolute;
   padding: 0;
   margin: 0;
-  left: 21px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
+  left: 0;
   border: none;
-  cursor: pointer;
+  width: 40px;
+  height: 48px;
 }
 
 .modal-number-btn-plus {
   position: absolute;
   padding: 0;
   margin: 0;
-  display: inline;
-  right: -20px;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  border: none;
   width: 40px;
-  height: 40px;
-  background-color: transparent;
+  height: 48px;
+}
+
+.modal-number-btn- {
+  position: relative;
+  content: '';
+  width: 40px;
+  height: 48px;
+  padding: 20px;
+  margin: 0;
   border: none;
   cursor: pointer;
+}
+
+.icon-btn-minus {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.icon-btn-path {
+  fill: var(--color-btn-number);
 }
 
 .field {

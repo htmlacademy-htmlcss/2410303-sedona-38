@@ -234,40 +234,64 @@
           <section class="modal__content">
             <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="field-group modal-form-date">
+              <fuildset class="field-group modal-form-date">
                 <label class="form-label" for="modal-arrival-date">
                   Дата заезда:
                 </label>
                 <input class="field" type="text" id="modal-arrival-date" name="modal-arrival-date"
                   placeholder="27 апреля 2020">
-              </div>
-              <div class="field-group modal-form-date">
+              </fuildset>
+              <fuildset class="field-group modal-form-date">
                 <label class="form-label" for="modal-departure-date">
                   Дата выезда:</label>
                 <input class="field" type="text" id="modal-departure-date" name="modal-departure-date"
                   placeholder="27 апреля 2020">
-              </div>
+              </fuildset>
               <div class="modal-form-number-wrap">
-                <div class="field-group modal-form-number-adults">
+                <fuildset class="field-group modal-form-number-adults">
                   <label class="form-label" for="modal-number-adults">
                     Взрослые:</label>
                   <div class="modal-number-input">
-                    <button class="modal-number-btn-minus" type="button"></button>
+                    <button class="modal-number-btn-minus" type="button">
+                      <span class="icon-btn-minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none">
+                          <path class="icon-btn-path" fill="none" d="M.393 0v2h14V0h-14Z" />
+                        </svg>
+                      </span>
+                    </button>
                     <input class="field" type="number" id="modal-number-adults" name="modal-number-adults" min="0"
                       max="9" placeholder="2">
-                    <button class="modal-number-btn-plus" type="button"></button>
+                    <button class="modal-number-btn-plus" type="button">
+                      <span class="icon-btn-plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                          <path class="icon-btn-path" fill="#000" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </div>
-                <div class="field-group modal-form-number-kids">
+                </fuildset>
+                <fuildset class="field-group modal-form-number-kids">
                   <label class="form-label" for="modal-number-kids">
                     Дети:</label>
                   <div class="modal-number-input">
-                    <button class="modal-number-btn-minus" type="button"></button>
+                    <button class="modal-number-btn" type="button">
+                      <span class="icon-btn-minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none">
+                          <path fill="var(--color-btn-number)" d="M.393 0v2h14V0h-14Z" />
+                        </svg>
+                      </span>
+                    </button>
                     <input class="field" type="number" id="modal-number-kids" name="modal-number-kids" min="0" max="9"
                       placeholder="2">
-                    <button class="modal-number-btn-plus" type="button"></button>
+                    <button class="modal-number-btn" type="button">
+                      <span class="icon-btn-plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="none">
+                          <path fill="#756157" d="M.393 0v2h14V0h-14Z" />
+                        </svg>
+                      </span>
+                    </button>
                   </div>
-                </div>
+                </fuildset>
                 <div class="explanatory-text-block">
                   <p class="explanatory-text"> Укажите количество детей, которые будут с вами, возраст которых от 6
                     до
