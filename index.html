@@ -231,39 +231,50 @@
       <div class="modal__wrapper">
         <div class="modal modal__size">
           <button class="sedona icon-close" id="close" type="button"></button>
-          <section class="modal__content" action="https://echo.htmlacademy.ru/" method="post">
+          <section class="modal__content">
             <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group modal-form-date">
-                <label class="form-label" for="modal-date">
-                  Дата заезда:</label>
-                <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
-              </p>
-              <p class="field-group modal-form-date">
-                <label class="form-label" for="modal-date">
+              <div class="field-group modal-form-date">
+                <label class="form-label" for="modal-arrival-date">
+                  Дата заезда:
+                </label>
+                <input class="field" type="text" id="modal-arrival-date" name="modal-arrival-date"
+                  placeholder="27 апреля 2020">
+              </div>
+              <div class="field-group modal-form-date">
+                <label class="form-label" for="modal-departure-date">
                   Дата выезда:</label>
-                <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
-              </p>
+                <input class="field" type="text" id="modal-departure-date" name="modal-departure-date"
+                  placeholder="27 апреля 2020">
+              </div>
               <div class="modal-form-number-wrap">
-                <p class="field-group modal-form-number-adults">
+                <div class="field-group modal-form-number-adults">
                   <label class="form-label" for="modal-number-adults">
                     Взрослые:</label>
-                  <input class="field" type="number" id="modal-number-adults" name="modal-number-adults" min="0"
-                    placeholder="2">
-                </p>
-                <p class="field-group modal-form-number-kids">
+                  <div class="modal-number-input">
+                    <button class="modal-number-btn-minus" type="button"></button>
+                    <input class="field" type="number" id="modal-number-adults" name="modal-number-adults" min="0"
+                      max="9" placeholder="2">
+                    <button class="modal-number-btn-plus" type="button"></button>
+                  </div>
+                </div>
+                <div class="field-group modal-form-number-kids">
                   <label class="form-label" for="modal-number-kids">
                     Дети:</label>
-                  <input class="field" type="number" id="modal-number-kids" name="modal-number-kids" min="0"
-                    placeholder="2">
-                </p>
+                  <div class="modal-number-input">
+                    <button class="modal-number-btn-minus" type="button"></button>
+                    <input class="field" type="number" id="modal-number-kids" name="modal-number-kids" min="0" max="9"
+                      placeholder="2">
+                    <button class="modal-number-btn-plus" type="button"></button>
+                  </div>
+                </div>
                 <div class="explanatory-text-block">
                   <p class="explanatory-text"> Укажите количество детей, которые будут с вами, возраст которых от 6
                     до
                     18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 </div>
               </div>
-              <a class="btn modal-search">Найти</a>
+              <button type="submit" class="btn modal-search">Найти</ь>
             </form>
           </section>
         </div>
