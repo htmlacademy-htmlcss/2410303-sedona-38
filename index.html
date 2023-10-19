@@ -159,48 +159,6 @@
             </a>
           </div>
         </section>
-        <section class="search__hotel__modal">
-          <div class="search__hotel__modal__wrapper">
-            <div class="search__hotel__modal__block">
-              <form class="search__hotel__modal-form" action="https://echo.htmlacademy.ru/" method="post">
-                <button class="sedona icon-close" id="close" type="button"></button>
-                <h2 class="title search__hotel__modal-title">Поиск гостиницы в Седоне</h2>
-                <p class="field-group search__hotel__modal-form-date">
-                  <label class="form-label" for="search__hotel__modal-date">
-                    Дата заезда:</label>
-                  <input class="field" type="text" id="search__hotel__modal-date" name="search__hotel__modal-date"
-                    placeholder="27 апреля 2020">
-                </p>
-                <p class="field-group search__hotel__modal-form-date">
-                  <label class="form-label" for="search__hotel__modal-date">
-                    Дата выезда:</label>
-                  <input class="field" type="text" id="search__hotel__modal-date" name="search__hotel__modal-date"
-                    placeholder="27 апреля 2020">
-                </p>
-                <div class="search__hotel__modal-form-number-wrap">
-                  <p class="field-group search__hotel__modal-form-number-adults">
-                    <label class="form-label" for="search__hotel__modal-number-adults">
-                      Взрослые:</label>
-                    <input class="field" type="number" id="search__hotel__modal-number-adults"
-                      name="search__hotel__modal-number-adults" min="0" placeholder="2">
-                  </p>
-                  <p class="field-group search__hotel__modal-form-number-kids">
-                    <label class="form-label" for="search__hotel__modal-number-kids">
-                      Дети:</label>
-                    <input class="field" type="number" id="search__hotel__modal-number-kids"
-                      name="search__hotel__modal-number-kids" min="0" placeholder="2">
-                  </p>
-                  <div class="explanatory-text-block">
-                    <p class="explanatory-text"> Укажите количество детей, которые будут с вами, возраст которых от 6
-                      до
-                      18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                  </div>
-                </div>
-                <a class="btn search__hotel__modal-search">Найти</a>
-              </form>
-            </div>
-          </div>
-        </section>
         <section class="sending sending--bg" data-test="subscribe">
           <h2 class="title sending__top-title">Подпишитесь на рассылку</h2>
           <p class="subtext sending-text">
@@ -236,7 +194,80 @@
           </a>
         </div>
       </footer>
+      <!-- <div class="modal-container">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Личный кабинет</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-login">Логин</label>
+                <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+              </p>
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-password">Пароль</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                  placeholder="Пароль">
+              </p>
+              <p class="field-group auth-form-user-options">
+                <label class="auth-form-checkbox control">
+                  <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Запомнить меня</span>
+                </label>
+                <a class="auth-form-recovery" href="#">Забыл пароль</a>
+              </p>
+              <button class="button auth-form-button" type="submit">Войти</button>
+              <a class="button auth-form-register" href="#">Регистрация</a>
+            </form>
+          </section>
+        </div>
+      </div> -->
 
+
+
+      <div class="modal__wrapper">
+        <div class="modal modal__size">
+          <button class="sedona icon-close" id="close" type="button"></button>
+          <section class="modal__content" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group modal-form-date">
+                <label class="form-label" for="modal-date">
+                  Дата заезда:</label>
+                <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
+              </p>
+              <p class="field-group modal-form-date">
+                <label class="form-label" for="modal-date">
+                  Дата выезда:</label>
+                <input class="field" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
+              </p>
+              <div class="modal-form-number-wrap">
+                <p class="field-group modal-form-number-adults">
+                  <label class="form-label" for="modal-number-adults">
+                    Взрослые:</label>
+                  <input class="field" type="number" id="modal-number-adults" name="modal-number-adults" min="0"
+                    placeholder="2">
+                </p>
+                <p class="field-group modal-form-number-kids">
+                  <label class="form-label" for="modal-number-kids">
+                    Дети:</label>
+                  <input class="field" type="number" id="modal-number-kids" name="modal-number-kids" min="0"
+                    placeholder="2">
+                </p>
+                <div class="explanatory-text-block">
+                  <p class="explanatory-text"> Укажите количество детей, которые будут с вами, возраст которых от 6
+                    до
+                    18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+              </div>
+              <a class="btn modal-search">Найти</a>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
