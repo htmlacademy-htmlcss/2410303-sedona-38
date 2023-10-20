@@ -824,9 +824,24 @@ svg {
 }
 
 .modal-form-date {
+  position: relative;
   gap: 18px;
   margin-bottom: 48px;
 }
+
+.modal-form-date:after {
+  position: absolute;
+  content: '';
+  right: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 17px;
+  height: 15px;
+  background-image: url('../images/icons/calendar.svg');
+  cursor: pointer;
+}
+
+
 
 .form-label {
   width: 125px;
@@ -923,9 +938,10 @@ svg {
 .field[type="text"] {
   width: 440px;
   padding: 12px 20px;
-
-
 }
+
+
+
 
 .field[type="number"] {
   padding: 14px 10px;
@@ -1183,16 +1199,14 @@ svg {
 
 }
 
-.footer__logo-link + .icon-footer-logo {
+.footer__logo-link {
   width: 115px;
   height: 34px;
-  fill: var(--color-text-primary);
   color: var(--color-text-primary);
 }
 
-.icon-footer-logo:hover,
-.icon-footer-logo:focus {
-  fill: var(--color-text-brown);
+.footer__logo-link:hover,
+.footer__logo-link:focus {
   color: var(--color-text-brown);
 }
 
