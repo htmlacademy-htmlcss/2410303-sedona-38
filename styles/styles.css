@@ -182,7 +182,7 @@ svg {
 }
 
 .sending-btn {
-  width: 232px;
+  width: 230px;
   height: 52px;
   border-radius: 0 4px 4px 0;
   background-color: var(--bg-primary);
@@ -431,7 +431,7 @@ svg {
 .favorite-decor::after {
   position: absolute;
   content: attr(data-quantity);
-  top: -11px;
+  top: -12px;
   right: -10px;
   width: 20px;
   height: 20px;
@@ -447,7 +447,6 @@ svg {
 .page-header-btn {
   max-width: 160px;
   padding: 8px 34px 8px 34px;
-  margin-right: 30px;
   text-transform: uppercase;
   color: var(--color-text-write);
   background-color: var(--color-btn-primary);
@@ -498,7 +497,7 @@ svg {
 }
 
 .page-header__content__banner-img {
-  margin: 52px auto 0 auto;
+  margin: 52px -18px 0 auto;
 
 }
 
@@ -512,7 +511,7 @@ svg {
 .advantages__header {
   max-width: 652px;
   margin: 0 auto;
-  padding: 69px 0 89px 0;
+  padding: 45px 0 69px 0;
 
 
 
@@ -583,7 +582,7 @@ svg {
 
 /* Выбрать со 2-4-ый */
 .advantages-item:nth-child(n+2):nth-child(-n+4) {
-  padding: 113px 86px;
+  padding: 88px 86px 95px 86px;
   width: 33.333%
 }
 
@@ -623,7 +622,7 @@ svg {
 .services__header {
   max-width: 655px;
   margin: 0 auto 69px auto;
-  padding: 62px 0 0 0;
+  padding: 41px 0 0 0;
 }
 
 .services-title {
@@ -651,9 +650,9 @@ svg {
   content: '';
   width: 84px;
   height: 84px;
-  left: 50%;
+  left: 51%;
   right: 50%;
-  bottom: 56%;
+  bottom: 52%;
   transform: translate(-50%, -50%);
   background-image: url('../images/icons/advantage-icon-1.svg');
   background-position: center;
@@ -668,9 +667,9 @@ svg {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
-  left: 50%;
+  left: 51%;
   right: 50%;
-  bottom: 56%;
+  bottom: 52%;
   background-image: url('../images/icons/advantage-icon-2.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -684,9 +683,9 @@ svg {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
-  left: 50%;
+  left: 51%;
   right: 50%;
-  bottom: 56%;
+  bottom: 52%;
   background-image: url('../images/icons/advantage-icon-3.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -699,6 +698,7 @@ svg {
 }
 
 .services__card-title {
+  margin: -3px;
   color: var(--color-text-primary);
   margin-bottom: 30px;
 }
@@ -710,12 +710,12 @@ svg {
 /* Search Hotel */
 
 .search__hotel {
+  padding: 55px 0 94px 0;
   background-color: var(--bg-white);
 }
 
 .search__hotel__block {
   max-width: 600px;
-  padding: 98px 0;
   margin: 0 auto;
 }
 
@@ -732,7 +732,7 @@ svg {
 
 .search__hotel-btn {
   display: block;
-  max-width: 376px;
+  width: 376px;
   padding: 15px 50px 15px 50px;
   margin: 0 auto;
   text-align: center;
@@ -1119,7 +1119,7 @@ svg {
 }
 
 .sending__top-title {
-  margin-bottom: 20px;
+  margin: 0 0 0 0;
   color: var(--color-text-write);
 }
 
@@ -1129,7 +1129,7 @@ svg {
 }
 
 .sending__form {
-  max-width: 688px;
+  max-width: 686px;
   margin: 0 auto;
 }
 
@@ -1180,7 +1180,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 70px;
+  margin: -4px 69px -4px 81px;
 }
 
 .footer__social-list {
@@ -1198,11 +1198,13 @@ svg {
   transition: opacity 0.3s ease-in-out;
 }
 
-.footer__social-link:active {
+.footer__social-link:active,
+.footer__logo-link:active {
   opacity: 0.3;
 }
 
 .footer__phone {
+  margin-left: 18px;
   color: var(--color-text-primary);
   text-align: center;
   font-size: 40px;
@@ -1211,6 +1213,7 @@ svg {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+
 
 .footer__phone:hover,
 .footer__phone:focus {
@@ -1222,28 +1225,13 @@ svg {
 }
 
 .footer__logo-link {
-  width: 115px;
-  height: 34px;
-  text-decoration: none;
   fill: var(--color-text-primary);
-  color: var(--color-text-primary);
   transition: all 0.3s ease-in-out;
-
-}
-
-.footer__logo-link {
-  width: 115px;
-  height: 34px;
-  color: var(--color-text-primary);
 }
 
 .footer__logo-link:hover,
 .footer__logo-link:focus {
-  color: var(--color-text-brown);
-}
-
-.footer__logo-link:active {
-  opacity: 0.3;
+  fill: var(--color-text-brown);
 }
 
 /* *** -End Main Page- ***  */
