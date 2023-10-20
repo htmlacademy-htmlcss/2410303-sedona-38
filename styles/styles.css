@@ -103,6 +103,11 @@ svg {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
+.none {
+  display: none !important;
+
+}
+
 /* General styles */
 
 /* BUTTONS */
@@ -407,25 +412,20 @@ svg {
   display: block;
   width: 20px;
   height: 20px;
-  text-align: center;
-  font-size: 19px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #000;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url('../images/icons/search.svg');
 }
 
 .icon-heart {
   position: relative;
+  width: 19px;
+  height: 17px;
   display: block;
   margin: 0 33px 0 25px;
   background-repeat: no-repeat;
   background-position: center;
-  text-decoration: none;
-  color: #000;
-  font-size: 19px;
-  line-height: 17px;
+  background-image: url('../images/icons/heart.svg');
 }
 
 .favorite-decor::after {
@@ -648,26 +648,49 @@ svg {
 
 .services__card:nth-child(1)::before {
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 43%;
+  content: '';
+  width: 84px;
+  height: 84px;
+  left: 50%;
   right: 50%;
   bottom: 56%;
+  transform: translate(-50%, -50%);
+  background-image: url('../images/icons/advantage-icon-1.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .services__card:nth-child(2)::before {
   position: absolute;
+  content: '';
+  width: 84px;
+  height: 84px;
   transform: translate(-50%, -50%);
-  left: 43%;
+  left: 50%;
   right: 50%;
   bottom: 56%;
+  background-image: url('../images/icons/advantage-icon-2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .services__card:nth-child(3)::before {
   position: absolute;
+  content: '';
+  width: 84px;
+  height: 84px;
   transform: translate(-50%, -50%);
-  left: 43%;
+  left: 50%;
   right: 50%;
   bottom: 56%;
+  background-image: url('../images/icons/advantage-icon-3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__card--opacity {
@@ -754,7 +777,7 @@ svg {
 
 .modal-form {}
 
-.icon-close {
+.icon-close-btn {
   position: absolute;
   display: inline;
   content: '';
@@ -762,7 +785,6 @@ svg {
   right: 52px;
   width: 52px;
   height: 52px;
-  color: #000;
   cursor: pointer;
   outline: transparent;
   border-radius: 50%;
@@ -773,16 +795,17 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
-.icon-close:hover {
-  background-color: #E6E6E6;
-}
-
-.icon-close:focus {
+.icon-close-btn:focus {
   outline: 4px solid #83B3D3;
 }
 
-.icon-close:active {
-  color: rgba(0, 0, 0, 0.3);
+.icon-close-btn:hover {
+  background-color: #E6E6E6;
+}
+
+.icon-close-btn:active {
+  fill: #E6E6E6;
+  fill-opacity: 0.3;
 }
 
 .modal-title {
@@ -1151,14 +1174,25 @@ svg {
 }
 
 .footer__logo-link {
+  width: 115px;
+  height: 34px;
   text-decoration: none;
+  fill: var(--color-text-primary);
   color: var(--color-text-primary);
-  font-size: 34px;
   transition: all 0.3s ease-in-out;
+
 }
 
-.footer__logo-link:hover,
-.footer__logo-link:focus {
+.footer__logo-link + .icon-footer-logo {
+  width: 115px;
+  height: 34px;
+  fill: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+.icon-footer-logo:hover,
+.icon-footer-logo:focus {
+  fill: var(--color-text-brown);
   color: var(--color-text-brown);
 }
 
@@ -1222,13 +1256,29 @@ svg {
 .breadcrumbs-item {}
 
 .breadcrumbs-link {
+  position: relative;
   color: var(--color-text-write);
   font-size: 16px;
   font-weight: var(--fw-regular);
   line-height: 21px;
   transition: color 0.3s ease-in;
+  cursor: pointer;
 
 }
+
+.breadcrumbs-link::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 13;
+  height: 12px;
+  background-image: url('../images/icons/home.svg');
+  background-repeat: no-repeat;
+}
+
 
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.60);
@@ -1238,12 +1288,6 @@ svg {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.icon-home {
-  font-size: 12px;
-  line-height: 13px;
-  text-decoration: none;
-  color: #fff;
-}
 
 .filter__hotel {
   padding-bottom: 70px;
@@ -1651,13 +1695,10 @@ svg {
 
 .icon--view__card__btn {
   padding: 0;
+  background-image: url('../images/icons/view__card__btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  font-size: 16px;
-  line-height: 40px;
-  text-decoration: none;
   outline: none;
   border-radius: 4px;
   border: 3px solid #E5E5E5;
@@ -1667,34 +1708,28 @@ svg {
 }
 
 .icon--view__gallery__btn {
+  padding: 0;
+  background-image: url('../images/icons/view__gallery__btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  font-size: 16px;
-  line-height: 40px;
-  text-decoration: none;
-  padding: 0;
+  outline: none;
   border-radius: 4px;
   border: 3px solid #E5E5E5;
-  outline: none;
   cursor: pointer;
   width: 40px;
   height: 40px;
 }
 
 .icon--view__list__btn {
+  padding: 0;
+  background-image: url('../images/icons/view__list__btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  font-size: 16px;
-  line-height: 40px;
-  text-decoration: none;
-  padding: 0;
+  outline: none;
   border-radius: 4px;
   border: 3px solid #E5E5E5;
-  outline: none;
   cursor: pointer;
   width: 40px;
   height: 40px;
