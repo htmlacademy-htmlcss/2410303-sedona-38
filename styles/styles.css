@@ -842,6 +842,38 @@ svg {
 }
 
 
+.modal-arrival-date-subtext {
+  position: absolute;
+  content: '';
+  top: 105%;
+  left: 66%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  text-transform: none;
+  width: 440px;
+  color: var(--color-text-error);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 21px;
+}
+
+.modal-departure-date-subtext {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  position: absolute;
+  content: '';
+  top: 105%;
+  left: 66%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  text-transform: none;
+  width: 440px;
+}
+
+
 
 .form-label {
   width: 125px;
