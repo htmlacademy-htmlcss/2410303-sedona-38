@@ -832,7 +832,16 @@ svg {
   width: 40px;
   height: 48px;
   background-color: #f2f2f2;
+  outline: 4px solid transparent;
+  transition: outline 0.3s ease-in-out;
 }
+
+.modal-number-btn-minus:focus,
+.modal-number-btn-plus:focus {
+  outline: 4px solid #83B3D3;
+}
+
+
 
 .modal-number-btn-minus {
   left: 0;
@@ -854,8 +863,10 @@ svg {
   cursor: pointer;
 }
 
+.icon-btn-minus,
 .icon-btn-plus {
   cursor: pointer;
+
 }
 
 .icon-btn-path {
@@ -930,42 +941,84 @@ svg {
   position: relative;
 }
 
-.modal-form-number-kids::before {
+/* Tooltip */
+
+.tooltip {
+  margin-top: 4px;
+  margin-left: 2px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.tooltip-icon::before {
   content: '';
   position: absolute;
   left: 75px;
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: block;
   width: 26px;
   height: 26px;
   background-repeat: no-repeat;
   background-color: var(--bg-primary);
   border-radius: 50%;
+  border: none;
   transition: all 0.3s ease-in;
   cursor: pointer;
+
 }
 
-.modal-form-number-kids::after {
+.tooltip-icon::after {
   content: '';
   position: absolute;
   left: 75px;
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  width: 3px;
-  height: 12px;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/icons/exclamation.svg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
-.modal-form-number-kids:hover::before {
-  background-color: #6298bce8;
+.tooltip-toggle:hover.tooltip-icon:hover::before {
+  background-color: #4f90bb;
 }
 
-.explanatory-text-block::before {
+.tooltip-text {
+  position: absolute;
+  background-color: #333;
+  color: var(--color-text-write);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--fw-regular);
+  text-transform: none;
+  padding: 18px;
+  border-radius: 8px;
+  right: -1100%;
+  top: 270%;
+  width: 256px;
+  z-index: 1;
+  margin: 0;
+  display: none;
+}
+
+.tooltip-text:before {
   position: absolute;
   content: '';
   top: -12px;
@@ -976,25 +1029,9 @@ svg {
   border-bottom: 13px solid #333;
 }
 
-.explanatory-text-block {
-  position: absolute;
-  padding: 18px;
-  top: 418px;
-  width: 256px;
-  left: 349px;
-  right: 42px;
-  border-radius: 10px;
-  background: var(--color-text-secondary);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
-
-}
-
-.explanatory-text {
-  margin: 0;
-  color: var(--color-text-write);
-  font-size: 16px;
-  font-weight: var(--fw-regular);
-  line-height: 20px;
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 /* Section__Sending */
