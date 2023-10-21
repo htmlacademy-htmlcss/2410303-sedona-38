@@ -205,6 +205,8 @@ svg {
   border-radius: 0 4px 4px 0;
   background-color: var(--bg-primary);
   padding: 8px 50px 8px 50px;
+  font-size: 20px;
+  text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -406,7 +408,7 @@ svg {
   position: absolute;
   content: "";
   width: 100%;
-  height: 3px;
+  height: 2px;
   right: 0;
   left: 0;
   bottom: -20px;
@@ -527,19 +529,20 @@ svg {
 .advantages__header {
   max-width: 652px;
   margin: 0 auto;
-  padding: 45px 0 69px 0;
+  padding: 45px 0 90px 0;
 
 
 
 }
 
 .advantages__header-title {
-
-  margin-bottom: 25px;
+  margin: 24px -12px 25px 0;
 
 }
 
-.advantages__header-subtitle {}
+.advantages__header-subtitle {
+  margin: 25px -13px 0 0;
+}
 
 .advantages-list {
   padding: 0;
@@ -560,13 +563,14 @@ svg {
 .advantages__content {
   flex-basis: 400px;
   text-align: center;
-  padding: 82px 80px;
+  padding: 100px 80px 82px 80px;
   background-color: var(--bg-primary);
 
 }
 
 .advantages__content-title {
   position: relative;
+  margin: 0;
 }
 
 .advantages__content-title::after {
@@ -577,12 +581,14 @@ svg {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  bottom: -30px;
+  bottom: -33px;
   background-color: rgba(255, 255, 255, 0.30);
 }
 
 
-.advantages__content-subtitle {}
+.advantages__content-subtitle {
+  margin: 63px 0 0 0;
+}
 
 .advantages__content__img {
   flex-basis: 800px;
@@ -598,7 +604,7 @@ svg {
 
 /* Выбрать со 2-4-ый */
 .advantages-item:nth-child(n+2):nth-child(-n+4) {
-  padding: 88px 86px 95px 86px;
+  padding: 88px 85px 112px 85px;
   width: 33.333%
 }
 
@@ -610,6 +616,7 @@ svg {
 .advantages__card-title {
   position: relative;
   color: var(--color-text-primary);
+  margin-bottom: 63px
 }
 
 .advantages__card-title::after {
@@ -620,7 +627,7 @@ svg {
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  bottom: -30px;
+  bottom: -32px;
   background: rgba(0, 0, 0, 0.30);
 }
 
@@ -628,6 +635,7 @@ svg {
 
 .advantages__card-text {
   color: var(--color-text-secondary);
+  margin: 0 0 0 0;
 }
 
 /* --Section services-- */
@@ -637,15 +645,17 @@ svg {
 
 .services__header {
   max-width: 655px;
-  margin: 0 auto 69px auto;
+  margin: 0 auto 62px auto;
   padding: 41px 0 0 0;
 }
 
 .services-title {
-  margin-bottom: 20px;
+  margin: 24px -8px 20px 0;
 }
 
-.services-text {}
+.services-text {
+  margin: 0 -7px 0 0
+}
 
 .services__cards {
   display: flex;
@@ -656,7 +666,7 @@ svg {
 .services__card {
   position: relative;
   flex-basis: 400px;
-  padding: 178px 85px 80px 85px;
+  padding: 160px 85px 64px 85px;
   list-style: none;
 }
 
@@ -666,9 +676,9 @@ svg {
   content: '';
   width: 84px;
   height: 84px;
-  left: 51%;
+  left: 50%;
   right: 50%;
-  bottom: 52%;
+  bottom: 48%;
   transform: translate(-50%, -50%);
   background-image: url('../images/icons/advantage-icon-1.svg');
   background-position: center;
@@ -683,9 +693,9 @@ svg {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
-  left: 51%;
+  left: 50%;
   right: 50%;
-  bottom: 52%;
+  bottom: 49%;
   background-image: url('../images/icons/advantage-icon-2.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -699,9 +709,9 @@ svg {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
-  left: 51%;
+  left: 50%;
   right: 50%;
-  bottom: 52%;
+  bottom: 48%;
   background-image: url('../images/icons/advantage-icon-3.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -714,7 +724,6 @@ svg {
 }
 
 .services__card-title {
-  margin: -3px;
   color: var(--color-text-primary);
   margin-bottom: 30px;
 }
@@ -726,7 +735,7 @@ svg {
 /* Search Hotel */
 
 .search__hotel {
-  padding: 55px 0 94px 0;
+  padding: 71px 0 97px 0;
   background-color: var(--bg-white);
 }
 
@@ -736,13 +745,13 @@ svg {
 }
 
 .search__hotel-title {
-  margin-bottom: 20px;
+  margin: 25px 0 20px 0;
 
 }
 
 .search__hotel-subtext {
+  margin: -1px 0 54px 0;
   text-align: center;
-  margin-bottom: 54px;
   color: var(--color-text-secondary);
 }
 
@@ -1151,6 +1160,7 @@ svg {
 .sending-input {
   padding: 12px 20px;
   margin: 0 -5px 0 0;
+  font-family: inherit;
   font-weight: var(--fw-bold);
   font-size: 18px;
   color: var(--color-text-primary);
@@ -1179,6 +1189,7 @@ svg {
 
 .sending-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
+  font-family: inherit;
   font-size: 18px;
   font-weight: var(--fw-regular);
 
@@ -1219,7 +1230,7 @@ svg {
 }
 
 .footer__phone {
-  margin-left: 18px;
+  margin: -7px 0 0 13px;
   color: var(--color-text-primary);
   text-align: center;
   font-size: 40px;
