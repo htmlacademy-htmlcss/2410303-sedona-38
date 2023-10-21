@@ -68,15 +68,26 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
+}
 
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+  background: black;
 }
 
 img {
