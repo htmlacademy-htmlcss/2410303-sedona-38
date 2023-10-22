@@ -232,7 +232,7 @@
           </a>
         </div>
       </footer>
-      <div class="modal__wrapper none">
+      <div class="modal__wrapper">
         <div class="modal modal__size">
           <button class="icon-close-btn" id="close" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
@@ -244,7 +244,7 @@
           <section class="modal__content">
             <h2 class="title modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fuildset class="field-group modal-form-date">
+              <div class="field-group modal-form-date">
                 <label class="form-label" for="modal-arrival-date">
                   Дата заезда:
                   <span class="modal-arrival-date-subtext">
@@ -253,18 +253,18 @@
                 </label>
                 <input class="field" type="text" id="modal-arrival-date" name="modal-arrival-date"
                   placeholder="27 апреля 2020">
-              </fuildset>
-              <fuildset class="field-group modal-form-date">
+              </div>
+              <div class="field-group modal-form-date">
                 <label class="form-label" for="modal-departure-date">
                   Дата выезда:</label>
                 <span class="modal-departure-date-subtext">
                   На эти даты есть свободные номера. Пока есть.
                 </span>
                 <input class="field" type="text" id="modal-departure-date" name="modal-departure-date"
-                  placeholder="27 апреля 2020">
-              </fuildset>
+                  placeholder="1 сентября 2023">
+              </div>
               <div class="modal-form-number-wrap">
-                <fuildset class="field-group modal-form-number-adults">
+                <div class="field-group modal-form-number-adults">
                   <label class="form-label" for="modal-number-adults">
                     Взрослые:</label>
                   <div class="modal-number-input">
@@ -287,8 +287,8 @@
                       </span>
                     </button>
                   </div>
-                </fuildset>
-                <fuildset class="field-group modal-form-number-kids">
+                </div>
+                <div class="field-group modal-form-number-kids">
                   <label class="form-label" for="modal-number-kids">
                     Дети:</label>
                   <span class="tooltip">
@@ -298,7 +298,7 @@
                       которые
                       будут с вами, возраст которых от 6
                       до
-                      18 лет. Дети до 6 лет размещаются бесплатно.
+                      18 лет. Дети<br>до 6 лет размещаются бесплатно.
                     </span>
                   </span>
                   <div class="modal-number-input">
@@ -321,7 +321,7 @@
                       </span>
                     </button>
                   </div>
-                </fuildset>
+                </div>
               </div>
               <button type="submit" class="btn modal-search">Найти</ь>
             </form>

@@ -792,7 +792,7 @@ svg {
 .modal {
   position: relative;
   padding: 64px 70px;
-  margin: 396px auto auto auto;
+  margin: auto;
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -804,13 +804,16 @@ svg {
 
 .modal__content {}
 
-.modal-form {}
+.modal-form {
+  margin: 0;
+}
 
 .icon-close-btn {
+  padding: 0;
   position: absolute;
   display: inline;
   content: '';
-  top: 64px;
+  top: 69px;
   right: 52px;
   width: 52px;
   height: 52px;
@@ -838,16 +841,19 @@ svg {
 }
 
 .modal-title {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 3px 0 64px 0;
   text-align: left;
 }
 
 .field-group {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  max-width: 577px;
+  height: 48px;
+  margin: 0 0 48px 0;
   padding: 0;
+  font-family: "PT Sans";
 
 
 }
@@ -855,13 +861,12 @@ svg {
 .modal-form-date {
   position: relative;
   gap: 18px;
-  margin-bottom: 48px;
 }
 
 .modal-form-date:after {
   position: absolute;
   content: '';
-  right: 20px;
+  right: 13px;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 17px;
@@ -874,8 +879,8 @@ svg {
 .modal-arrival-date-subtext {
   position: absolute;
   content: '';
-  top: 105%;
-  left: 66%;
+  top: 110%;
+  left: 65.3%;
   right: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
@@ -888,18 +893,19 @@ svg {
 }
 
 .modal-departure-date-subtext {
-  color: var(--color-text-secondary);
-  font-size: 16px;
-  font-weight: var(--fw-regular);
   position: absolute;
   content: '';
-  top: 105%;
-  left: 66%;
+  top: 110%;
+  left: 65.3%;
   right: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
   text-transform: none;
   width: 440px;
+  color: var(--color-text-error);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 21px;
 }
 
 
@@ -973,6 +979,7 @@ svg {
 }
 
 .field {
+  height: 48px;
   background: #f2f2f2;
   border-radius: 4px;
   border: 3px solid transparent;
@@ -998,7 +1005,10 @@ svg {
 
 .field[type="text"] {
   width: 440px;
-  padding: 12px 20px;
+  padding: 12px 13px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: var(--fw-bold);
 }
 
 
@@ -1016,6 +1026,10 @@ svg {
   background: transparent;
   border: none;
   outline: none;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+
 }
 
 .field[type="number"]::-webkit-inner-spin-button,
@@ -1027,18 +1041,23 @@ svg {
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: var(--fw-bold);
+  font-family: "PT Sans";
 }
 
 
 .modal-form-number-wrap {
   display: flex;
-  justify-content: space-between;
+  column-gap: 87px;
+  max-height: 48px;
 }
 
-.modal-form-number-adults {}
+.modal-form-number-adults {
+  gap: 12px;
+}
 
 .modal-form-number-kids {
   position: relative;
+  column-gap: 10px;
 }
 
 /* Tooltip */
@@ -1063,8 +1082,8 @@ svg {
 .tooltip-icon::before {
   content: '';
   position: absolute;
-  left: 75px;
-  top: 50%;
+  left: -42px;
+  top: 40%;
   right: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
@@ -1084,8 +1103,8 @@ svg {
 .tooltip-icon::after {
   content: '';
   position: absolute;
-  left: 75px;
-  top: 50%;
+  left: -42px;
+  top: 40%;
   right: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -1102,27 +1121,28 @@ svg {
 
 .tooltip-text {
   position: absolute;
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   color: var(--color-text-write);
   font-size: 16px;
   line-height: 20px;
   font-weight: var(--fw-regular);
   text-transform: none;
-  padding: 18px;
+  padding: 18px 19px 23px 23px;
   border-radius: 8px;
-  right: -1100%;
-  top: 270%;
+  right: -437%;
+  top: 223%;
   width: 256px;
   z-index: 1;
   margin: 0;
   display: none;
 }
 
+
 .tooltip-text:before {
   position: absolute;
   content: '';
-  top: -12px;
-  left: 49%;
+  top: -9px;
+  left: 45%;
   right: 49%;
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
