@@ -809,9 +809,11 @@ svg {
 }
 
 .icon-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   position: absolute;
-  display: inline;
   content: '';
   top: 69px;
   right: 52px;
@@ -896,16 +898,17 @@ svg {
   position: absolute;
   content: '';
   top: 110%;
-  left: 65.3%;
+  left: 56.1%;
   right: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
   text-transform: none;
   width: 440px;
-  color: var(--color-text-error);
+  color: var(--color-text-secondary);
   font-size: 16px;
   font-weight: var(--fw-regular);
   line-height: 21px;
+  text-align: center;
 }
 
 
