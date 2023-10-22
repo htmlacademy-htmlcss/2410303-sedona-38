@@ -1415,6 +1415,7 @@ svg {
 
 .catalog__filter-group:nth-child(3) {
   margin-left: 14%;
+  width: 288px;
 }
 
 .catalog__filter-title {
@@ -1636,7 +1637,6 @@ svg {
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
-  max-width: 286px;
 
 }
 
@@ -1655,9 +1655,10 @@ svg {
   min-width: 143px;
   height: 48px;
   cursor: pointer;
+  border: 3px solid transparent;
   background-color: var(--bg-white);
-  outline: transparent;
   transition: all 0.3s ease-in;
+
 
 }
 
@@ -1671,7 +1672,7 @@ svg {
 }
 
 .catalog-filter-label:active {
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .range-input {
