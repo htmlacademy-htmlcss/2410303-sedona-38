@@ -506,7 +506,7 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/hero__bg-decor.svg');
+  background-image: url('../images/hero-bg-decor.svg');
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
@@ -1296,7 +1296,7 @@ svg {
 
 .filter__bg {
 
-  background-image: url('../images/filter__hotel.jpg');
+  background-image: url('../images/filter-hotel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1806,7 +1806,7 @@ svg {
 
 .icon--view__card__btn {
   padding: 0;
-  background-image: url('../images/icons/view__card__btn-icon.svg');
+  background-image: url('../images/icons/view-card-btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1820,7 +1820,7 @@ svg {
 
 .icon--view__gallery__btn {
   padding: 0;
-  background-image: url('../images/icons/view__gallery__btn-icon.svg');
+  background-image: url('../images/icons/view-gallery-btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1834,7 +1834,7 @@ svg {
 
 .icon--view__list__btn {
   padding: 0;
-  background-image: url('../images/icons/view__list__btn-icon.svg');
+  background-image: url('../images/icons/view-list-btn-icon.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
