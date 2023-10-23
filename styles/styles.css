@@ -97,13 +97,6 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  vertical-align: top;
-
-}
-
-svg {
-  max-width: 100%;
-  height: auto;
 
 }
 
@@ -118,11 +111,6 @@ svg {
 
 .page-shadow {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
-}
-
-.none {
-  display: none !important;
-
 }
 
 /* General styles */
@@ -562,11 +550,12 @@ svg {
 
 .advantages-item__wrap {
   display: flex;
+  min-height: 352px;
 
 }
 
 .advantages__content {
-  flex-basis: 400px;
+  max-width: 400px;
   text-align: center;
   padding: 100px 80px 82px 80px;
   background-color: var(--bg-primary);
@@ -593,11 +582,6 @@ svg {
 
 .advantages__content-subtitle {
   margin: 63px 0 0 0;
-}
-
-.advantages__content__img {
-  flex-basis: 800px;
-
 }
 
 .advantages__content-img {}
@@ -855,7 +839,7 @@ svg {
   height: 48px;
   margin: 0 0 48px 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 
 
 }
@@ -1009,7 +993,7 @@ svg {
 .field[type="text"] {
   width: 440px;
   padding: 12px 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: var(--fw-bold);
 }
@@ -1029,7 +1013,7 @@ svg {
   background: transparent;
   border: none;
   outline: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: var(--fw-bold);
 
@@ -1044,7 +1028,7 @@ svg {
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: var(--fw-bold);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 
@@ -1177,7 +1161,7 @@ svg {
 
 .sending-text {
   color: var(--color-text-write);
-  margin-bottom: 54px;
+  margin-bottom: -2px;
 }
 
 .sending__form {
@@ -1709,7 +1693,7 @@ svg {
 /* Section__Catalog__Hotel */
 
 .catalog__hotel {
-  padding: 50px 70px 65px 70px;
+  padding: 50px 70px 63px 70px;
   background-color: var(--bg-white);
 }
 
@@ -1889,7 +1873,7 @@ svg {
 }
 
 .card-title {
-  margin: 16px 0 18px 0;
+  margin: 13px 0 18px 0;
   color: var(--color-text-primary);
   font-size: 24px;
   font-weight: var(--fw-bold);
@@ -1899,7 +1883,7 @@ svg {
 .card__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   color: var(--color-text-secondary);
   font-size: 18px;
   font-weight: var(--fw-regular);
