@@ -1658,7 +1658,7 @@ svg {
 .range-input {
   padding: 12px 45px 12px 20px;
   font: inherit;
-  text-align: center;
+  text-align: left;
   background-color: var(--bg-white);
   border: none;
   outline: 3px solid transparent;
@@ -1866,7 +1866,7 @@ svg {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
-  row-gap: 21px;
+  row-gap: 19px;
   border-bottom: 1px solid #E6E6E6;
   list-style: none;
 }
@@ -1916,7 +1916,7 @@ svg {
 .card__buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .card__stars__wrap {
@@ -1935,7 +1935,7 @@ svg {
   left: 44px;
   right: 50%;
   transform: translate(-50%, -50%);
-  bottom: 0;
+  bottom: 3px;
   background-image: url('../images/icons/star.svg');
   background-repeat: space repeat;
   height: 17px;
@@ -1966,12 +1966,13 @@ svg {
 }
 
 .card__star-rating {
+  padding: 14px 23px 8px 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  text-align: center;
   background-color: #f2f2f2;
-  padding: 8px 23px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: var(--fw-regular);
