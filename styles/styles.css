@@ -83,12 +83,12 @@ html {
   height: 100%;
 }
 
-main {
+.main {
   min-height: 100%;
   flex-grow: 1;
 }
 
-footer {
+.footer {
   flex-shrink: 0;
   background: black;
 }
