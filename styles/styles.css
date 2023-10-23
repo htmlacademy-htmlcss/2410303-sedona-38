@@ -1618,11 +1618,6 @@ svg {
   background-color: #dadada;
 }
 
-.range-toggle:active,
-.range-toggle:focus {
-  /* outline: 3px solid #ffffffea; */
-  background-color: #dadada;
-}
 
 .toggle-min {
   top: -8px;
@@ -1640,25 +1635,18 @@ svg {
 
 }
 
-.range-wrapper-inputs > .catalog-filter-label:nth-child(1) {
+.catalog-filter-label > .range-input[name="min-price"] {
   border-radius: 4px 0 0 4px;
 }
 
-.range-wrapper-inputs > .catalog-filter-label:nth-child(2) {
+.catalog-filter-label > .range-input[name="max-price"] {
   border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-label {
-  padding: 12px 20px 12px 20px;
-  display: flex;
-  justify-content: space-between;
-  min-width: 143px;
-  height: 48px;
+  width: 143px;
+  position: relative;
   cursor: pointer;
-  border: 3px solid transparent;
-  background-color: var(--bg-white);
-  transition: all 0.3s ease-in;
-
 
 }
 
@@ -1667,32 +1655,40 @@ svg {
 
 }
 
-.catalog-filter-label:hover {
-  background: #E6E6E6;
-}
-
-.catalog-filter-label:active {
-  border: 3px solid #83B3D3;
-}
-
 .range-input {
-  padding: 0 2px;
+  padding: 12px 45px 12px 20px;
   font: inherit;
   text-align: center;
-  background-color: transparent;
+  background-color: var(--bg-white);
   border: none;
+  outline: 3px solid transparent;
   appearance: textfield;
   color: var(--color-text-primary);
   font-size: 18px;
   font-weight: var(--fw-bold);
+  transition: all 0.3s ease-in;
 }
 
 .range-input-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 11px;
   color: rgba(0, 0, 0, 0.3);
   font-size: 18px;
   font-weight: var(--fw-regular);
 
 }
+
+.range-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:hover,
+.range-input:focus {
+  background-color: #dadada;
+}
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
