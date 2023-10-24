@@ -76,7 +76,8 @@ body {
   line-height: 21px;
   background-color: #f2f2f2;
   margin: 0;
-  height: 100%;
+  min-width: 1200px;
+  height: 100vh;
 }
 
 html {
@@ -104,7 +105,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 
 }
@@ -118,13 +119,14 @@ img {
 /* BUTTONS */
 
 .btn {
-  min-height: 36px;
+  height: auto;
   color: var(--color-text-write);
   font-size: 16px;
   text-transform: uppercase;
   font-family: inherit;
   font-weight: var(--fw-bold);
   border-radius: 4px;
+  text-align: center;
   text-decoration: none;
   border: none;
   display: inline-block;
@@ -148,10 +150,12 @@ img {
 }
 
 .details-btn {
-  max-width: 192px;
+  display: inline-block;
+  width: 140px;
   background-color: var(--color-btn-primary);
   padding: 8px 26px;
   cursor: pointer;
+  text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -180,6 +184,7 @@ img {
 }
 
 .favorites-btn {
+  display: inline-block;
   width: 140px;
   background-color: var(--color-btn-secondary);
   padding: 8px 12px;
@@ -188,10 +193,9 @@ img {
 
 .sending-btn {
   width: 230px;
-  height: 52px;
   border-radius: 0 4px 4px 0;
   background-color: var(--bg-primary);
-  padding: 8px 50px 8px 50px;
+  padding: 13px 50px 13px 50px;
   font-size: 20px;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
@@ -324,15 +328,15 @@ img {
 /* -- Page__Header -- */
 
 .page-header {
-  /* position: fixed;
-  width: 100%; */
   z-index: 3;
   background-color: var(--bg-white);
+
 }
 
 .page-header__nav {
   display: flex;
-  height: 64px;
+  max-height: 64px;
+
 }
 
 .header-logo {
@@ -454,7 +458,7 @@ img {
 }
 
 .page-header-btn {
-  max-width: 160px;
+  width: 160px;
   padding: 8px 34px 8px 34px;
   text-transform: uppercase;
   color: var(--color-text-write);
@@ -491,10 +495,10 @@ img {
   content: "";
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background-image: url('../images/hero-bg-decor.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   z-index: 2;
   width: 100%;
   height: 57px;
@@ -587,10 +591,11 @@ img {
 
 }
 
-/* Выбрать со 2-4-ый */
-.advantages-item:nth-child(n+2):nth-child(-n+4) {
+.advantages-card__wrap {
   padding: 88px 85px 112px 85px;
-  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 
@@ -636,6 +641,7 @@ img {
 
 .services-title {
   margin: 24px -8px 20px 0;
+
 }
 
 .services-text {
@@ -645,6 +651,7 @@ img {
 .services__cards {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -657,7 +664,7 @@ img {
 }
 
 
-.services__card:nth-child(1)::before {
+.icon-advantage-1::before {
   position: absolute;
   content: '';
   width: 84px;
@@ -669,11 +676,9 @@ img {
   background-image: url('../images/icons/advantage-icon-1.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
-.services__card:nth-child(2)::before {
+.icon-advantage-2::before {
   position: absolute;
   content: '';
   width: 84px;
@@ -685,11 +690,9 @@ img {
   background-image: url('../images/icons/advantage-icon-2.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
 }
 
-.services__card:nth-child(3)::before {
+.icon-advantage-3::before {
   position: absolute;
   content: '';
   width: 84px;
@@ -701,7 +704,7 @@ img {
   background-image: url('../images/icons/advantage-icon-3.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 .services__card--opacity {
@@ -712,6 +715,7 @@ img {
 .services__card-title {
   color: var(--color-text-primary);
   margin-bottom: 30px;
+  max-height: 28px;
 }
 
 .services__card-text {
@@ -1150,12 +1154,14 @@ img {
 }
 
 .sending-text {
-  margin: 18px 0 56px 0;
+  margin: 17px 0 56px 0;
   color: var(--color-text-write);
 }
 
 .sending__form {
-  max-width: 686px;
+  display: flex;
+  justify-content: center;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -1168,7 +1174,7 @@ img {
   color: var(--color-text-primary);
   background-color: #f2f2f2;
   width: 455px;
-  height: 52px;
+  height: auto;
   border-radius: 4px 0 0 4px;
   border: 3px solid transparent;
   outline: none;
@@ -1266,7 +1272,6 @@ img {
 /* Section__Filter */
 
 .filter__bg {
-
   background-image: url('../images/filter-hotel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
