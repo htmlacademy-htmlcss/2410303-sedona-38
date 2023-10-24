@@ -590,7 +590,7 @@ img {
 /* Выбрать со 2-4-ый */
 .advantages-item:nth-child(n+2):nth-child(-n+4) {
   padding: 88px 85px 112px 85px;
-  max-width: 400px;
+  width: 33.333%;
 }
 
 
