@@ -34,7 +34,7 @@
   --color-btn-primary: #756157;
   --color-btn-secondary: #82b3d3;
   --color-btn-selected: #7db54f;
-  --color-btn-number: rgba(117, 97, 87, 0.30);
+  --color-btn-number: rgba(117, 97, 87, 0.3);
   /* Background */
   --bg-basic: rgba(0, 0, 0, 0.3);
   --bg-primary: #82b3d3;
@@ -198,7 +198,7 @@ img {
 .favorites-btn:hover,
 .sending-btn:hover,
 .modal-search:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .favorites-btn--active {
@@ -537,7 +537,7 @@ img {
   right: 50%;
   transform: translate(-50%, -50%);
   bottom: -33px;
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages__content-subtitle {
@@ -551,7 +551,7 @@ img {
 }
 
 .advantages--opacity {
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages__card-title {
@@ -569,7 +569,7 @@ img {
   right: 50%;
   transform: translate(-50%, -50%);
   bottom: -32px;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages__card-text {
@@ -661,7 +661,7 @@ img {
 }
 
 .services__card--opacity {
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .services__card-title {
@@ -872,7 +872,7 @@ img {
 
 .modal-number-btn-minus:focus,
 .modal-number-btn-plus:focus {
-  outline: 4px solid #83B3D3;
+  outline: 4px solid #83b3d3;
 }
 
 .modal-number-btn-minus {
@@ -917,7 +917,7 @@ img {
 }
 
 .field:hover {
-  background: #E6E6E6;
+  background: #e6e6e6;
   outline: 0;
   outline-offset: 0;
 }
@@ -1065,7 +1065,7 @@ img {
   right: 49%;
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
-  border-bottom: 13px solid #333;
+  border-bottom: 13px solid #333333;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1188,7 +1188,7 @@ img {
 }
 
 .footer__phone:active {
-  color: rgba(117, 97, 87, 0.30);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer__logo-link {
@@ -1284,11 +1284,11 @@ img {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter__hotel {
@@ -1401,7 +1401,7 @@ img {
   width: 10px;
   height: 10px;
   opacity: 0;
-  color: #3F5E72;
+  color: #3f5e72;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1452,7 +1452,7 @@ img {
   content: "";
   position: absolute;
   display: block;
-  color: #3F5E72;
+  color: #3f5e72;
   opacity: 0;
   border-radius: 50%;
   top: 5px;
@@ -1460,7 +1460,7 @@ img {
   right: 5px;
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1943,7 +1943,7 @@ img {
 }
 
 .pagination-link:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link--active {
@@ -1962,7 +1962,5 @@ img {
 .sending__catalog-title {
   color: var(--color-text-primary);
 }
-
-.sending__catalog-subtext {}
 
 /* *** -End Catalog Page- ***  */
