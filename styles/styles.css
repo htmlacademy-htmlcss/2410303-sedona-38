@@ -657,21 +657,24 @@ img {
 }
 
 .services__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   position: relative;
-  flex-basis: 400px;
+  width: 400px;
   padding: 160px 85px 64px 85px;
   list-style: none;
 }
 
-
-.icon-advantage-1::before {
+.icon-advantage-1::after {
+  display: block;
   position: absolute;
   content: '';
   width: 84px;
   height: 84px;
+  top: 115px;
   left: 50%;
   right: 50%;
-  bottom: 48%;
   transform: translate(-50%, -50%);
   background-image: url('../images/icons/advantage-icon-1.svg');
   background-position: center;
@@ -684,6 +687,7 @@ img {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
+  top: 115px;
   left: 50%;
   right: 50%;
   bottom: 49%;
@@ -698,6 +702,7 @@ img {
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
+  top: 115px;
   left: 50%;
   right: 50%;
   bottom: 48%;
@@ -714,8 +719,7 @@ img {
 
 .services__card-title {
   color: var(--color-text-primary);
-  margin-bottom: 30px;
-  max-height: 28px;
+  margin-bottom: 14px;
 }
 
 .services__card-text {
