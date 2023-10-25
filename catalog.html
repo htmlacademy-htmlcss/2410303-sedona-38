@@ -13,15 +13,15 @@
     <div class="main-container page-shadow">
       <header class="page-header" data-test="header">
         <nav class="page-header__nav">
-          <a href="index.html" class="header-logo">
+          <a class="header-logo" href="index.html">
             <img width="140" height="70" src="./images/header-logo.svg" alt="header logo">
           </a>
           <ul class="nav-list menu__nav-list">
             <li class="menu__nav-item">
-              <a href="index.html" class="menu__nav-link">Главная</a>
+              <a class="menu__nav-link" href="index.html">Главная</a>
             </li>
             <li class="menu__nav-item">
-              <a href="#" class="menu__nav-link">О седоне</a>
+              <a class="menu__nav-link" href="#">О седоне</a>
             </li>
             <li class="menu__nav-item">
               <a class="menu__nav-link nav-link-current">Гостиницы</a>
@@ -29,18 +29,18 @@
           </ul>
           <ul class="nav-list menu__nav-user">
             <li class="menu__nav-user-item">
-              <a href="#" class="menu__nav-user-link menu__nav-user-search">
+              <a class="menu__nav-user-link menu__nav-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="menu__nav-user-item">
-              <a href="#" class="menu__nav-user-link icon-heart">
+              <a class="menu__nav-user-link icon-heart" href="#">
                 <span class="favorite-decor" data-quantity="12"></span>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
             <li class="menu__nav-user-item">
-              <a href="#" class="menu__nav-user-link btn page-header-btn">Хочу сюда!</a>
+              <a class="menu__nav-user-link btn page-header-btn" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -73,7 +73,6 @@
                     </span>
                   </label>
                 </li>
-
                 <li class="catalog__filter-item">
                   <label class="catalog__filter-control">
                     <input class="catalog__filter-input" type="checkbox" name="infrastructure" value="parking" checked>
@@ -103,7 +102,6 @@
                     <span class="catalog__filter-radio">Мотель</span>
                   </label>
                 </li>
-
                 <li class="catalog__filter-item">
                   <label class="catalog__filter-control">
                     <input class="catalog__filter-input" type="radio" name="housing" value="apartments">
@@ -129,10 +127,10 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 213px">
-                    <button type="button" class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button type="button" class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -140,16 +138,15 @@
               </div>
             </fieldset>
             <div class="filters__buttons">
-              <button type="submit" class="btn filters__btn-apply">Применить</button>
-              <button type="reset" class="btn filters__btn-reset">Сбросить</button>
+              <button class="btn filters__btn-apply" type="submit">Применить</button>
+              <button class="btn filters__btn-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
         <section class="catalog__hotel" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="select__control__wrap">
-            <p class="catalog-search">
-              Найдено гостиниц:
+            <p class="catalog-search">Найдено гостиниц:
               <span class="catalog__hotel-search-number">38</span>
             </p>
             <label class="select-control__inner">
@@ -167,17 +164,17 @@
             </label>
             <ul class="type__card-list">
               <li class="type__card-item">
-                <a href="#" class="type__card-link icon--view__card__btn active">
+                <a class="type__card-link icon--view__card__btn active" href="#">
                   <span class="visually-hidden">Отобразить карточками</span>
                 </a>
               </li>
               <li class="type__card-item">
-                <a href="#" class="type__card-link icon--view__gallery__btn">
+                <a class="type__card-link icon--view__gallery__btn" href="#">
                   <span class="visually-hidden">Отобразить галереей</span>
                 </a>
               </li>
               <li class="type__card-item">
-                <a href="#" class="type__card-link icon--view__list__btn">
+                <a class="type__card-link icon--view__list__btn" href="#">
                   <span class="visually-hidden">Отобразить списком</span></a>
               </li>
             </ul>
@@ -185,7 +182,7 @@
           <ul class="cards">
             <li class="card-item">
               <a class="card__img-link" href="#">
-                <img width="300" height="212" class="card-img" src="/images/hotel-1.jpg" alt="Amara Resort & Spa">
+                <img class="card-img" width="300" height="212" src="/images/hotel-1.jpg" alt="Amara Resort & Spa">
               </a>
               <div class="card-content">
                 <a class="card__title-link" href="#">
@@ -209,7 +206,7 @@
             </li>
             <li class="card-item">
               <a class="card__img-link" href="#">
-                <img width="300" height="212" class="card-img" src="/images/hotel-2.jpg" alt="Villas at Poco Diablo">
+                <img class="card-img" width="300" height="212" src="/images/hotel-2.jpg" alt="Villas at Poco Diablo">
               </a>
               <div class="card-content">
                 <a class="card__title-link" href="#">
@@ -233,7 +230,7 @@
             </li>
             <li class="card-item">
               <a class="card__img-link" href="#">
-                <img width="300" height="212" class="card-img" src="/images/hotel-3.jpg" alt="Desert Quail Inn">
+                <img class="card-img" width="300" height="212" src="/images/hotel-3.jpg" alt="Desert Quail Inn">
               </a>
               <div class="card-content">
                 <a class="card__title-link" href="#">
@@ -257,7 +254,7 @@
             </li>
             <li class="card-item">
               <a class="card__img-link" href="#">
-                <img width="300" height="212" class="card-img" src="/images/hotel-4.jpg" alt="GreenTree Inn">
+                <img class="card-img" width="300" height="212" src="/images/hotel-4.jpg" alt="GreenTree Inn">
               </a>
               <div class="card-content">
                 <a class="card__title-link" href="#">
@@ -275,9 +272,7 @@
                   <p class="card__star--icon card__star--two">
                     <span class="visually-hidden">Две звезды</span>
                   </p>
-                  <span class="card__star-rating">
-                    Рейтинг: 5,0
-                  </span>
+                  <span class="card__star-rating">Рейтинг: 5,0</span>
                 </div>
               </div>
             </li>
@@ -319,7 +314,7 @@
         <div class="footer__wrap">
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link icon-vk" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="footer__social-link icon-vk" href="https://vk.com/htmlacademy" rel="noreferrer">
                 <span class="visually-hidden">Перейти на страницу htmlacademy ВКонтакте</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" fill="none">
                   <path fill="#83B3D3" fill-rule="evenodd"
@@ -329,7 +324,7 @@
               </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link icon-telegram" href="https://t.me/htmlacademy" target="_blank">
+              <a class="footer__social-link icon-telegram" href="https://t.me/htmlacademy" rel="noreferrer">
                 <span class="visually-hidden">Перейти на телеграм канал htmlacademy</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" fill="none">
                   <path fill="#83B3D3"
@@ -339,7 +334,7 @@
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link icon-youtube" href="https://www.youtube.com/user/htmlacademyru"
-                target="_blank">
+                rel="noreferrer">
                 <span class="visually-hidden">Перейти на ютуб канал htmlacademy</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
                   <path fill="#83B3D3"
@@ -348,8 +343,8 @@
               </a>
             </li>
           </ul>
-          <a href="tel:+78128121212" class="footer__phone">+7 (812) 812-12-12</a>
-          <a href="https://htmlacademy.ru/" target="_blank">
+          <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a href="https://htmlacademy.ru/" rel="noreferrer">
             <span class="visually-hidden">Перейти на сайт htmlacademy.ru</span>
             <svg class="footer__logo-link" xmlns="http://www.w3.org/2000/svg" width="115" height="34"
               viewBox="0 0 115 34" fill="none">
