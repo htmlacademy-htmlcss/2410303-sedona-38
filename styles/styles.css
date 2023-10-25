@@ -155,7 +155,6 @@ img {
   background-color: var(--color-btn-primary);
   padding: 8px 26px;
   cursor: pointer;
-  text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -1874,6 +1873,7 @@ img {
 .card__buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 12px;
 }
 
