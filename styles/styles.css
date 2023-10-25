@@ -29,11 +29,11 @@
   /* color */
 
   /* Text */
-  --color-text-primary: #000;
-  --color-text-secondary: #333;
+  --color-text-primary: #000000;
+  --color-text-secondary: #333333;
   --color-text-brown: #756157;
   --color-text-error: #ff5757;
-  --color-text-write: #fff;
+  --color-text-write: #ffffff;
   --color-text-opacity: rgba(255, 255, 255, 0.3);
 
   /* Battons */
@@ -43,14 +43,14 @@
   --color-btn-number: rgba(117, 97, 87, 0.30);
 
   /* Background */
-  --bg-basic: rgba(0, 0, 0, 0.30);
+  --bg-basic: rgba(0, 0, 0, 0.3);
   --bg-primary: #82b3d3;
   --bg-secondary: rgba(131, 179, 211);
   --bg-white: #ffffff;
 
   /* Icons */
 
-  --ico-basic: #000;
+  --ico-basic: #000000;
   --ico-secondary: #83b3d3;
   --ico-inscriptions: #7db54f;
 
@@ -91,7 +91,7 @@ html {
 
 .footer {
   flex-shrink: 0;
-  background: #000;
+  background: #000000;
 }
 
 img {
@@ -111,7 +111,7 @@ img {
 }
 
 .page-shadow {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* General styles */
@@ -138,7 +138,7 @@ img {
 .btn:disabled:active,
 .btn:disabled:focus {
   opacity: 0.7;
-  background-color: #e5e5e5e6;
+  background-color: rgba(229, 229, 229, 0.902);
   cursor: no-drop;
 }
 
@@ -170,7 +170,7 @@ img {
 
 .details-btn:active,
 .search__hotel-btn:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
 
@@ -178,7 +178,7 @@ img {
 .modal-search:active,
 .filters__btn-apply:active,
 .favorites-btn:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
   background-color: var(--bg-primary);
 }
 
@@ -426,7 +426,7 @@ img {
   height: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/icons/search.svg');
+  background-image: url("../images/icons/search.svg");
 }
 
 .icon-heart {
@@ -437,7 +437,7 @@ img {
   margin: 0 33px 0 25px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/icons/heart.svg');
+  background-image: url("../images/icons/heart.svg");
 }
 
 .favorite-decor::after {
@@ -481,7 +481,7 @@ img {
 
 .hero {
   min-height: 485px;
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -495,7 +495,7 @@ img {
   left: 0;
   right: 0;
   bottom: -1px;
-  background-image: url('../images/hero-bg-decor.svg');
+  background-image: url("../images/hero-bg-decor.svg");
   background-repeat: no-repeat;
   background-position: bottom center;
   z-index: 2;
@@ -572,7 +572,7 @@ img {
 
 .advantages__content-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 60px;
   height: 2px;
   left: 50%;
@@ -606,7 +606,7 @@ img {
 
 .advantages__card-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 60px;
   height: 2px;
   left: 50%;
@@ -664,21 +664,21 @@ img {
 .icon-advantage-1::after {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   width: 84px;
   height: 84px;
   top: 115px;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('../images/icons/advantage-icon-1.svg');
+  background-image: url("../images/icons/advantage-icon-1.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .icon-advantage-2::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
@@ -686,14 +686,14 @@ img {
   left: 50%;
   right: 50%;
   bottom: 49%;
-  background-image: url('../images/icons/advantage-icon-2.svg');
+  background-image: url("../images/icons/advantage-icon-2.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .icon-advantage-3::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 84px;
   height: 84px;
   transform: translate(-50%, -50%);
@@ -701,7 +701,7 @@ img {
   left: 50%;
   right: 50%;
   bottom: 48%;
-  background-image: url('../images/icons/advantage-icon-3.svg');
+  background-image: url("../images/icons/advantage-icon-3.svg");
   background-position: center;
   background-repeat: no-repeat;
 
@@ -796,7 +796,7 @@ img {
   align-items: center;
   padding: 0;
   position: absolute;
-  content: '';
+  content: "";
   top: 69px;
   right: 52px;
   width: 52px;
@@ -849,20 +849,20 @@ img {
 
 .modal-form-date:after {
   position: absolute;
-  content: '';
+  content: "";
   right: 13px;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
-  background-image: url('../images/icons/calendar.svg');
+  background-image: url("../images/icons/calendar.svg");
   cursor: pointer;
 }
 
 
 .modal-arrival-date-subtext {
   position: absolute;
-  content: '';
+  content: "";
   top: 110%;
   left: 65.3%;
   right: 50%;
@@ -878,7 +878,7 @@ img {
 
 .modal-departure-date-subtext {
   position: absolute;
-  content: '';
+  content: "";
   top: 110%;
   left: 56.1%;
   right: 50%;
@@ -941,7 +941,7 @@ img {
 
 .icon-btn-minus {
   position: absolute;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   top: 50%;
@@ -1059,7 +1059,7 @@ img {
 }
 
 .tooltip-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -42px;
   top: 40%;
@@ -1080,7 +1080,7 @@ img {
 }
 
 .tooltip-icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -42px;
   top: 40%;
@@ -1088,7 +1088,7 @@ img {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background-image: url('../images/icons/exclamation.svg');
+  background-image: url("../images/icons/exclamation.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1118,7 +1118,7 @@ img {
 
 .tooltip-text:before {
   position: absolute;
-  content: '';
+  content: "";
   top: -9px;
   left: 45%;
   right: 49%;
@@ -1140,7 +1140,7 @@ img {
 }
 
 .sending--bg {
-  background-image: url('../images/subscribe.jpg');
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1269,7 +1269,7 @@ img {
 /* Section__Filter */
 
 .filter__bg {
-  background-image: url('../images/filter-hotel.jpg');
+  background-image: url("../images/filter-hotel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1300,7 +1300,7 @@ img {
 }
 
 .breadcrumbs-item:nth-child(2)::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 12px;
   right: 0;
@@ -1308,7 +1308,7 @@ img {
   bottom: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/icons/arrow.svg');
+  background-image: url("../images/icons/arrow.svg");
   width: 7px;
   height: 10px;
 
@@ -1316,14 +1316,14 @@ img {
 
 .breadcrumbs-link.icon-home::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 49%;
   left: 6px;
   right: 0;
   transform: translate(-50%, -50%);
   width: 13px;
   height: 12px;
-  background-image: url('../images/icons/home.svg');
+  background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -1441,7 +1441,7 @@ img {
 
 .catalog__filter-checkbox::before {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1456,7 +1456,7 @@ img {
 /* -- ВНУТРЕННЯЯ CТИЛИЗАЦИЯ CHECKBOX -- */
 
 .catalog__filter-checkbox::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1472,7 +1472,7 @@ img {
 
 .catalog__filter-input:checked + .catalog__filter-checkbox::after {
   opacity: 1;
-  background-image: url('../images/icons/checkbox.svg');
+  background-image: url("../images/icons/checkbox.svg");
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -1498,7 +1498,7 @@ img {
 
 .catalog__filter-radio::before {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1513,7 +1513,7 @@ img {
 /* -- ВНУТРЕННЯЯ CТИЛИЗАЦИЯ RADIO -- */
 
 .catalog__filter-radio::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   color: #3F5E72;
@@ -1697,7 +1697,7 @@ img {
   content: "";
   right: 16px;
   top: 45%;
-  fill: #000;
+  fill: #000000;
   transform: translate(0, -50%) rotate(0);
   transition: all 0.3s ease-in;
   z-index: 1;
@@ -1771,7 +1771,7 @@ img {
 
 .icon--view__card__btn {
   padding: 0;
-  background-image: url('../images/icons/view-card-btn-icon.svg');
+  background-image: url("../images/icons/view-card-btn-icon.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1785,7 +1785,7 @@ img {
 
 .icon--view__gallery__btn {
   padding: 0;
-  background-image: url('../images/icons/view-gallery-btn-icon.svg');
+  background-image: url("../images/icons/view-gallery-btn-icon.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1799,7 +1799,7 @@ img {
 
 .icon--view__list__btn {
   padding: 0;
-  background-image: url('../images/icons/view-list-btn-icon.svg');
+  background-image: url("../images/icons/view-list-btn-icon.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1884,32 +1884,32 @@ img {
 }
 
 .card__star--icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 44px;
   right: 50%;
   transform: translate(-50%, -50%);
   bottom: 3px;
-  background-image: url('../images/icons/star.svg');
+  background-image: url("../images/icons/star.svg");
   background-repeat: space repeat;
   height: 17px;
 }
 
 .card__star--four::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 89px;
 }
 
 .card__star--three::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 32px;
   width: 66px;
 }
 
 .card__star--two::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 20px;
   width: 48px;
