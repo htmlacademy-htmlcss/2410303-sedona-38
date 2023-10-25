@@ -540,6 +540,7 @@ img {
 }
 
 .advantages-list {
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -548,6 +549,7 @@ img {
 
 .advantages-item {
   list-style: none;
+  flex: 1 0 auto;
 }
 
 .advantages-item__wrap {
@@ -587,17 +589,11 @@ img {
 }
 
 .advantages-card__wrap {
-  display: flex;
-
-}
-
-.advantages-card__wrap {
   padding: 88px 85px 112px 85px;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-}
+  min-width: 400px;
+  max-width: 100%;
 
+}
 
 .advantages--opacity {
   background-color: rgba(131, 179, 211, 0.20);
