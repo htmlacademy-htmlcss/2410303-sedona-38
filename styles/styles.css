@@ -1608,7 +1608,9 @@ img {
 /* select__catalog__hotel */
 
 .catalog-search {
-  margin: 0 201px 0 0;
+  padding-right: 15px;
+  margin: 0 auto 0 0;
+  min-width: 355px;
   color: var(--color-text-primary);
   font-size: 30px;
   font-weight: var(--fw-bold);
@@ -1619,10 +1621,12 @@ img {
 .select__control__wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .select-control__inner {
   position: relative;
+  margin-right: 2px;
 }
 
 .icon--select-arrow {
@@ -1686,20 +1690,25 @@ img {
 
 .type__card-list {
   display: flex;
-  margin: 0 0 0 71px;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 0 0 0 70px;
   padding: 0;
   list-style: none;
 
 }
 
-.type__card-item:not(:last-child) {
-  margin-right: 10px;
+.type__card-item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  width: 45px;
+  height: 48px;
 }
 
 .type__card-link {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 48px;
 }
 
 .icon--view__card__btn {
