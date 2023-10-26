@@ -1746,7 +1746,21 @@ img {
   display: inline-block;
   width: 45px;
   height: 48px;
+  transition: all 0.3s ease-in-out;
 }
+
+
+.type__card-link:active,
+.type__card-link:hover {
+  border-radius: 4px;
+  border: 3px solid var(--ico-basic);
+}
+
+.type__card-link:focus {
+  border: 3px solid #68a2ca;
+}
+
+
 
 .icon--view__card__btn {
   padding: 0;
