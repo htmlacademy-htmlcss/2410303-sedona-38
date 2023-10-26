@@ -1167,6 +1167,7 @@ img {
 .icon-telegram svg,
 .icon-youtube svg {
   fill: #83B3D3;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon-vk:hover svg,
