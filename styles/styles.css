@@ -1621,7 +1621,7 @@ img {
 .catalog-search {
   padding-right: 15px;
   margin: 0 auto 0 0;
-  min-width: 355px;
+  width: 355px;
   color: var(--color-text-primary);
   font-size: 30px;
   font-weight: var(--fw-bold);
@@ -1700,24 +1700,21 @@ img {
 }
 
 .type__card-list {
+  width: 168px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  margin: 2px 0 0 70px;
+  margin: 2px 0 0 58px;
   padding: 0;
   list-style: none;
 
 }
 
-.type__card-item:not(:last-child) {
+.type__card-item:not(:first-child) {
+  margin-left: 11px;
   margin-bottom: 8px;
   width: 45px;
   height: 48px;
-}
-
-
-.type__card-item:not(:last-child) {
-  margin-right: 11px;
 }
 
 .type__card-link {
