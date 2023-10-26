@@ -114,6 +114,7 @@ img {
   text-align: center;
   text-decoration: none;
   border: none;
+  outline: none;
   display: inline-block;
   cursor: pointer;
 }
@@ -143,8 +144,7 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
-.details-btn:hover,
-.sending-btn:hover {
+.details-btn:hover {
   background-color: #615048;
 }
 
@@ -197,7 +197,9 @@ img {
 
 .favorites-btn:hover,
 .sending-btn:hover,
-.modal-search:hover {
+.modal-search:hover,
+.sending-btn:focus,
+.filters__btn-apply:focus {
   background-color: #68a2ca;
 }
 
@@ -308,11 +310,13 @@ img {
 }
 
 .page-header__nav {
+  position: relative;
   display: flex;
-  max-height: 64px;
+  min-height: 64px;
 }
 
 .header-logo {
+  position: absolute;
   margin-left: 70px;
   z-index: 1;
 }
@@ -321,19 +325,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu__nav-list {
-  margin-left: 46px;
+  padding-left: 257px;
   gap: 32px;
   font-weight: var(--fw-bold);
-  list-style: none;
-}
-
-.menu__nav-item {
-  list-style: none;
 }
 
 .menu__nav-link {
@@ -706,7 +706,9 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
-.search__hotel-btn:hover {
+.search__hotel-btn:hover,
+.search__hotel-btn:focus,
+.page-header-btn:focus {
   background-color: #615048;
 }
 
@@ -1161,8 +1163,24 @@ img {
   list-style: none;
 }
 
+.icon-vk svg,
+.icon-telegram svg,
+.icon-youtube svg {
+  fill: #83B3D3;
+}
+
+.icon-vk:hover svg,
+.icon-vk:focus svg,
+.icon-telegram:hover svg,
+.icon-telegram:focus svg,
+.icon-youtube:hover svg,
+.icon-youtube:focus svg {
+  fill: #68A2CA;
+}
+
 .footer__social-link {
   text-decoration: none;
+  outline: none;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -1174,6 +1192,10 @@ img {
 .footer__phone {
   margin: -7px 0 0 13px;
   color: var(--color-text-primary);
+  outline: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
   text-align: center;
   font-size: 40px;
   font-weight: var(--fw-regular);
@@ -1191,13 +1213,15 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer__logo-link {
+.footer__logo-link,
+.footer__logo-link svg {
   fill: var(--color-text-primary);
   transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
-.footer__logo-link:hover,
-.footer__logo-link:focus {
+.footer__logo-link:hover svg,
+.footer__logo-link:focus svg {
   fill: var(--color-text-brown);
 }
 
@@ -1776,7 +1800,7 @@ img {
 
 .cards {
   margin: 40px 0 0 0;
-  padding: 0;
+  padding: 0 0 40px 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
