@@ -1932,10 +1932,11 @@ img {
 .pagination-list {
   padding: 0;
   margin: 77px 0 0 0;
-  list-style: none;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
   gap: 8px;
 }
 
