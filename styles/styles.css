@@ -1255,8 +1255,8 @@ img {
 .breadcrumbs-link.icon-home::after {
   position: absolute;
   content: "";
-  top: 49%;
-  left: 6px;
+  top: 3px;
+  left: 7px;
   right: 0;
   transform: translate(-50%, -50%);
   width: 13px;
@@ -1692,17 +1692,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  margin: 0 0 0 70px;
+  margin: 2px 0 0 70px;
   padding: 0;
   list-style: none;
 
 }
 
-.type__card-item {
-  margin-right: 8px;
+.type__card-item:not(:last-child) {
   margin-bottom: 8px;
   width: 45px;
   height: 48px;
+}
+
+
+.type__card-item:not(:last-child) {
+  margin-right: 11px;
 }
 
 .type__card-link {
