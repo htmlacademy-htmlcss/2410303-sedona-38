@@ -499,16 +499,12 @@ img {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.advantages-item {
   list-style: none;
-  flex: 1 0 auto;
 }
 
 .advantages-item__wrap {
@@ -546,8 +542,7 @@ img {
 
 .advantages-card__wrap {
   padding: 88px 85px 112px 85px;
-  min-width: 400px;
-  max-width: 100%;
+  width: 400px;
 }
 
 .advantages--opacity {
@@ -598,21 +593,20 @@ img {
 }
 
 .services__cards {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .services__card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
-  position: relative;
   width: 400px;
   padding: 160px 85px 64px 85px;
-  list-style: none;
 }
 
 .icon-advantage-1::after {
