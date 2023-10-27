@@ -229,7 +229,7 @@ img {
 
 .filters__btn-reset {
   padding: 0 50px;
-  margin-top: 29px;
+  margin-top: 36px;
   width: 190px;
   height: auto;
   transition: all 0.2s ease-in;
@@ -344,6 +344,7 @@ img {
 
 .menu__nav-link {
   padding: 15px 21px 17px 21px;
+  min-width: 110px;
 }
 
 .menu__nav-user-link {
@@ -373,7 +374,7 @@ img {
 }
 
 .menu__nav-link:hover::before {
-  width: 63%;
+  width: calc(100% - 42px);
   height: 2px;
 }
 
@@ -397,9 +398,9 @@ img {
 .nav-link-current::before {
   position: absolute;
   content: "";
-  width: 63%;
+  width: calc(100% - 42px);
   height: 2px;
-  top: 61px;
+  top: 60px;
   right: 0;
   left: 20px;
   background-color: var(--color-btn-primary);
