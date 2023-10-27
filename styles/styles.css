@@ -500,6 +500,7 @@ img {
 /* --Section Advantages-- */
 
 .advantages {
+  padding: 45px 0 21px 0;
   width: 100%;
   background-color: var(--bg-white);
 }
@@ -507,7 +508,6 @@ img {
 .advantages__header {
   max-width: 652px;
   margin: 0 auto;
-  padding: 45px 0 90px 0;
 }
 
 .advantages__header-title {
@@ -515,7 +515,7 @@ img {
 }
 
 .advantages__header-subtitle {
-  margin: 25px -13px 0 0;
+  margin: 25px -13px 90px 0;
 }
 
 .advantages-list {
@@ -596,12 +596,12 @@ img {
 
 .services {
   background-color: var(--bg-white);
+  padding: 20px 0 35px 0;
 }
 
 .services__header {
   max-width: 655px;
   margin: 0 auto 62px auto;
-  padding: 41px 0 0 0;
 }
 
 .services-title {
@@ -626,7 +626,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 160px 85px 64px 85px;
+  padding: 160px 85px 60px 85px;
 }
 
 .icon-advantage-1::after {
@@ -690,7 +690,7 @@ img {
 /* Search Hotel */
 
 .search__hotel {
-  padding: 71px 0 97px 0;
+  padding: 36px 0 97px 0;
   background-color: var(--bg-white);
 }
 
@@ -704,7 +704,7 @@ img {
 }
 
 .search__hotel-subtext {
-  margin: -1px 0 54px 0;
+  margin: -1px 0 56px 0;
   text-align: center;
   color: var(--color-text-secondary);
 }
@@ -1123,8 +1123,12 @@ img {
 }
 
 .sending-text {
-  margin: 17px 0 56px 0;
+  margin: 20px 0 56px 0;
   color: var(--color-text-write);
+}
+
+.sending-catalog-text {
+  color: var(--color-text-secondary);
 }
 
 .sending__form {
@@ -1135,7 +1139,7 @@ img {
 }
 
 .sending-input {
-  padding: 12px 20px;
+  padding: 12px 18px;
   margin: 0 -5px 0 0;
   font-family: inherit;
   font-weight: var(--fw-regular);
@@ -1608,7 +1612,7 @@ img {
 }
 
 .range-input {
-  padding: 12px 45px 12px 20px;
+  padding: 12px 45px 15px 24px;
   font: inherit;
   text-align: left;
   background-color: var(--form-light-element);
@@ -1701,7 +1705,7 @@ img {
 }
 
 .select-control {
-  padding: 14px 34px 14px 20px;
+  padding: 11px 34px 14px 17px;
   width: 292px;
   height: 49px;
   background-color: var(--bg-white);
@@ -1831,8 +1835,8 @@ img {
 /* == Cards == */
 
 .cards {
-  margin: 40px 0 0 0;
-  padding: 0 0 40px 0;
+  margin: 35px 0 0 0;
+  padding: 0 0 39px 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
@@ -1863,7 +1867,7 @@ img {
 .card__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   color: var(--color-text-secondary);
   font-size: 18px;
   font-weight: var(--fw-regular);
@@ -1987,7 +1991,7 @@ img {
 
 .pagination-list {
   padding: 0;
-  margin: 77px 0 0 0;
+  margin: 36px 0 0 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
