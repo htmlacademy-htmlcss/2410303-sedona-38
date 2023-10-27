@@ -197,7 +197,8 @@ img {
 .modal-search:hover,
 .sending-btn:focus,
 .favorites-btn:focus,
-.filters__btn-apply:focus {
+.filters__btn-apply:focus,
+.modal-search:focus {
   background-color: #68a2ca;
 }
 
@@ -770,6 +771,7 @@ img {
 .icon-close-btn:active {
   fill: #e6e6e6;
   fill-opacity: 0.3;
+  outline: none;
 }
 
 .modal-title {
