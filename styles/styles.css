@@ -316,7 +316,7 @@ img {
 
 .header-logo {
   position: absolute;
-  margin-left: 70px;
+  margin-left: 66px;
   z-index: 1;
 }
 
@@ -330,7 +330,7 @@ img {
 }
 
 .menu__nav-list {
-  padding-left: 234px;
+  padding-left: 227px;
   font-weight: var(--fw-bold);
 }
 
@@ -408,7 +408,7 @@ img {
 
 .menu__nav-user {
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 75px;
 }
 
 .menu__nav-user-search {
@@ -494,7 +494,7 @@ img {
 }
 
 .page-header__content__banner-img {
-  margin: 52px -18px 0 auto;
+  margin: 52px -5px 0 auto;
 }
 
 /* --Section Advantages-- */
@@ -511,11 +511,11 @@ img {
 }
 
 .advantages__header-title {
-  margin: 24px -12px 25px 0;
+  margin: 24px -2px 25px 0;
 }
 
 .advantages__header-subtitle {
-  margin: 25px -13px 90px 0;
+  margin: 25px -6px 90px 0;
 }
 
 .advantages-list {
@@ -533,9 +533,9 @@ img {
 }
 
 .advantages__content {
-  max-width: 400px;
+  max-width: 394px;
   text-align: center;
-  padding: 100px 80px 82px 80px;
+  padding: 100px 88px 82px 80px;
   background-color: var(--bg-primary);
 }
 
@@ -571,6 +571,7 @@ img {
 
 .advantages__card-title {
   position: relative;
+  margin: 24px 6px 0 0;
   color: var(--color-text-primary);
   margin-bottom: 63px
 }
@@ -589,7 +590,7 @@ img {
 
 .advantages__card-text {
   color: var(--color-text-secondary);
-  margin: 0 0 0 0;
+  margin: 0 0 0 -7px;
 }
 
 /* --Section services-- */
@@ -605,11 +606,11 @@ img {
 }
 
 .services-title {
-  margin: 24px -8px 20px 0;
+  margin: 24px 0 20px 0;
 }
 
 .services-text {
-  margin: 0 -7px 0 0
+  margin: 0 2px 0 0
 }
 
 .services__cards {
@@ -626,7 +627,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 160px 85px 60px 85px;
+  padding: 160px 88px 60px 81px;
 }
 
 .icon-advantage-1::after {
@@ -690,7 +691,7 @@ img {
 /* Search Hotel */
 
 .search__hotel {
-  padding: 36px 0 97px 0;
+  padding: 36px 17px 97px 9px;
   background-color: var(--bg-white);
 }
 
@@ -700,11 +701,11 @@ img {
 }
 
 .search__hotel-title {
-  margin: 25px 0 20px 0;
+  margin: 25px 0 20px -3px;
 }
 
 .search__hotel-subtext {
-  margin: -1px 0 56px 0;
+  margin: 0 4px 56px 0;
   text-align: center;
   color: var(--color-text-secondary);
 }
@@ -712,8 +713,8 @@ img {
 .search__hotel-btn {
   display: block;
   width: 376px;
-  padding: 15px 50px 15px 50px;
-  margin: 0 auto;
+  padding: 15px 48px 15px 42px;
+  margin: 0 auto 0 auto;
   text-align: center;
   font-size: 20px;
   background-color: var(--color-btn-primary);
@@ -1108,7 +1109,7 @@ img {
 /* Section__Sending */
 
 .sending {
-  padding: 95px 70px 104px 70px;
+  padding: 95px 81px 104px 70px;
 }
 
 .sending--bg {
@@ -1118,12 +1119,12 @@ img {
 }
 
 .sending__top-title {
-  margin: 0 0 0 0;
+  margin: 0 0 0 -3px;
   color: var(--color-text-write);
 }
 
 .sending-text {
-  margin: 20px 0 56px 0;
+  margin: 21px 6px 56px 0;
   color: var(--color-text-write);
 }
 
@@ -1186,7 +1187,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -4px 69px -4px 81px;
+  margin: -4px 74px -4px 77px;
 }
 
 .footer__social-list {
@@ -1225,7 +1226,7 @@ img {
 }
 
 .footer__phone {
-  margin: -7px 0 0 13px;
+  margin: -4px 0 0 10px;
   color: var(--color-text-primary);
   outline: none;
   outline-style: none;
@@ -1354,7 +1355,7 @@ img {
 }
 
 .filter__hotel {
-  padding: 40px 70px 72px 70px;
+  padding: 40px 74px 72px 67px;
 }
 
 .catalog__filter {
@@ -1662,7 +1663,7 @@ img {
 /* Section__Catalog__Hotel */
 
 .catalog__hotel {
-  padding: 50px 70px 63px 70px;
+  padding: 46px 75px 63px 67px;
   background-color: var(--bg-white);
 }
 
@@ -1835,11 +1836,11 @@ img {
 /* == Cards == */
 
 .cards {
-  margin: 35px 0 0 0;
+  margin: 38px 0 0 0;
   padding: 0 0 39px 0;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 19px;
   row-gap: 19px;
   border-bottom: 1px solid #e6e6e6;
   list-style: none;
