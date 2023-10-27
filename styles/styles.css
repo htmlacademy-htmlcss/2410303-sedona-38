@@ -760,6 +760,10 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+.icon-close-btn svg {
+  fill: #000000;
+}
+
 .icon-close-btn:focus {
   outline: 4px solid #83b3d3;
 }
@@ -865,14 +869,29 @@ img {
   border: none;
   width: 40px;
   height: 48px;
+  fill: rgba(117, 97, 87, 0.3);
   background-color: #f2f2f2;
-  outline: 4px solid transparent;
-  transition: outline 0.3s ease-in-out;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.modal-number-btn-minus:focus,
-.modal-number-btn-plus:focus {
-  outline: 4px solid #83b3d3;
+.modal-number-btn-minus:focus svg,
+.modal-number-btn-plus:focus svg {
+  fill: #000000;
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.modal-number-btn-minus:hover svg,
+.modal-number-btn-plus:hover svg {
+  fill: #000000;
+}
+
+.modal-number-btn-minus:active svg,
+.modal-number-btn-plus:active svg {
+  fill: rgba(117, 97, 87, 0.3);
+  outline: 3px solid transparent;
 }
 
 .modal-number-btn-minus {
@@ -898,10 +917,6 @@ img {
 .icon-btn-minus,
 .icon-btn-plus {
   cursor: pointer;
-}
-
-.icon-btn-path {
-  fill: var(--color-btn-number);
 }
 
 .field {
