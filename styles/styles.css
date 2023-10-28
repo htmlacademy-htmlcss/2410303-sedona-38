@@ -1327,23 +1327,25 @@ img {
   font-size: 16px;
   font-weight: var(--fw-regular);
   line-height: 21px;
-  transition: color 0.3s ease-in;
+  transition: all 0.3s ease-in;
   cursor: pointer;
 }
 
-.breadcrumbs-link.icon-home::after {
+.icon-home svg {
   position: absolute;
   content: "";
   top: -3px;
   left: 7px;
   right: 0;
   transform: translate(-50%, -50%);
-  width: 13px;
-  height: 12px;
-  background-image: url("../images/icons/home.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  fill: #ffffff;
+  transition: all 0.3s ease-in;
   cursor: pointer;
+}
+
+.icon-home:hover svg,
+.icon-home:focus svg {
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:hover {
