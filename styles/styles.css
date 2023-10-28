@@ -561,7 +561,7 @@ img {
 }
 
 .advantages-card__wrap {
-  padding: 88px 85px 112px 85px;
+  padding: 88px 87px 112px 83px;
   width: 400px;
 }
 
@@ -571,7 +571,7 @@ img {
 
 .advantages__card-title {
   position: relative;
-  margin: 24px 6px 0 0;
+  margin: 24px 0 0 0;
   color: var(--color-text-primary);
   margin-bottom: 63px
 }
@@ -590,7 +590,7 @@ img {
 
 .advantages__card-text {
   color: var(--color-text-secondary);
-  margin: 0 0 0 -7px;
+  margin: 0 0 0 0;
 }
 
 /* --Section services-- */
@@ -691,7 +691,7 @@ img {
 /* Search Hotel */
 
 .search__hotel {
-  padding: 36px 17px 97px 9px;
+  padding: 36px 18px 97px 10px;
   background-color: var(--bg-white);
 }
 
@@ -701,7 +701,7 @@ img {
 }
 
 .search__hotel-title {
-  margin: 25px 0 20px -3px;
+  margin: 25px 0 20px 0;
 }
 
 .search__hotel-subtext {
@@ -1119,12 +1119,12 @@ img {
 }
 
 .sending__top-title {
-  margin: 0 0 0 -3px;
+  margin: 0;
   color: var(--color-text-write);
 }
 
 .sending-text {
-  margin: 21px 6px 56px 0;
+  margin: 21px 0 56px 0;
   color: var(--color-text-write);
 }
 
