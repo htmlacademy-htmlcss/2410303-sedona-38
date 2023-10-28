@@ -99,11 +99,6 @@ img {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.none {
-  display: none !important;
-
-}
-
 /* General styles */
 
 /* BUTTONS */
@@ -739,6 +734,7 @@ img {
   left: 0;
   top: 0;
   display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
