@@ -515,7 +515,7 @@ img {
 }
 
 .advantages__header-subtitle {
-  margin: 25px 0 90px 0;
+  margin: 25px 0 91px 0;
 }
 
 .advantages-list {
@@ -535,7 +535,7 @@ img {
 .advantages__content {
   max-width: 400px;
   text-align: center;
-  padding: 100px 88px 82px 81px;
+  padding: 103px 83px 82px 81px;
   background-color: var(--bg-primary);
 }
 
@@ -557,11 +557,11 @@ img {
 }
 
 .advantages__content-subtitle {
-  margin: 61px 0 0 0;
+  margin: 61px 0 0 5px;
 }
 
 .advantages-card__wrap {
-  padding: 86px 87px 112px 83px;
+  padding: 90px 87px 112px 83px;
   width: 400px;
 }
 
@@ -627,7 +627,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding: 160px 88px 60px 81px;
+  padding: 160px 88px 81px 85px;
 }
 
 .icon-advantage-1::after {
@@ -681,17 +681,18 @@ img {
 
 .services__card-title {
   color: var(--color-text-primary);
-  margin-bottom: 10px;
+  margin: 25px 0 29px 0;
 }
 
 .services__card-text {
   color: var(--color-text-secondary);
+  margin: 0 0 0 0;
 }
 
 /* Search Hotel */
 
 .search__hotel {
-  padding: 37px 18px 97px 10px;
+  padding: 37px 18px 95px 10px;
   background-color: var(--bg-white);
 }
 
@@ -705,7 +706,7 @@ img {
 }
 
 .search__hotel-subtext {
-  margin: 0 -6px 56px 0;
+  margin: 0 -6px 55px 0;
   text-align: center;
   color: var(--color-text-secondary);
 }
@@ -713,7 +714,7 @@ img {
 .search__hotel-btn {
   display: block;
   width: 376px;
-  padding: 15px 50px 15px 50px;
+  padding: 15px 47px 15px 53px;
   margin: 0 auto 0 auto;
   text-align: center;
   font-size: 20px;
@@ -1123,12 +1124,12 @@ img {
 }
 
 .sending__top-title {
-  margin: 0;
+  margin: 0 0 0 3px;
   color: var(--color-text-write);
 }
 
 .sending-text {
-  margin: 19px 0 56px 5px;
+  margin: 21px 0 56px 5px;
   color: var(--color-text-write);
 }
 
@@ -1139,7 +1140,7 @@ img {
 .sending__form {
   display: flex;
   justify-content: center;
-  max-width: 680px;
+  max-width: 688px;
   margin: 0 auto;
 }
 
@@ -1151,13 +1152,18 @@ img {
   font-size: 18px;
   color: var(--color-text-primary);
   background-color: var(--form-light-element);
-  width: 455px;
+  width: 466px;
   height: auto;
   border-radius: 4px 0 0 4px;
   border: 3px solid transparent;
   outline: none;
   transition: all 0.3s ease-in-out;
 }
+
+.sending-input[type="email"] {
+  width: 466px;
+}
+
 
 .sending-input:hover {
   background: #e6e6e6;
